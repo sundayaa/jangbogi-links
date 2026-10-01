@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>든든한 장보기 — 영상으로 소개한 상품 모음</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+    font-size: 20px; line-height: 1.6; color: #1a1a1a; background: #f7f4ee;
+  }
+  .wrap { max-width: 600px; margin: 0 auto; padding: 0 16px 48px; }
+  header.top {
+    background: #2e5d33; color: #fff; border-radius: 0 0 24px 24px;
+    padding: 28px 20px 24px; text-align: center; margin: 0 -16px 24px;
+  }
+  .brand { font-size: 32px; font-weight: 800; margin: 0 0 6px; }
+  .tagline { font-size: 21px; margin: 0 0 14px; }
+  .disclosure {
+    display: inline-block; background: rgba(255,255,255,.16);
+    font-size: 16px; line-height: 1.5; border-radius: 12px; padding: 10px 14px; margin: 0;
+  }
+  .howto {
+    background: #fff; border: 3px solid #2e5d33; border-radius: 20px;
+    padding: 20px; margin-bottom: 28px;
+  }
+  .howto h2 { font-size: 26px; margin: 0 0 12px; text-align: center; }
+  .howto ol { margin: 0; padding-left: 8px; list-style: none; }
+  .howto li { font-size: 22px; margin: 12px 0; display: flex; align-items: center; gap: 12px; }
+  .step {
+    flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%;
+    background: #2e5d33; color: #fff; font-size: 28px; font-weight: 800;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  h2.list-title { font-size: 28px; text-align: center; margin: 8px 0 20px; }
+  .card {
+    background: #fff; border-radius: 24px; padding: 20px; margin-bottom: 28px;
+    box-shadow: 0 3px 14px rgba(0,0,0,.10); border: 1px solid #e8e2d5;
+  }
+  .badge {
+    display: inline-block; background: #fff3d6; color: #7a5b00;
+    font-size: 18px; font-weight: 700; border-radius: 999px; padding: 6px 16px; margin-bottom: 12px;
+  }
+  .pimg {
+    width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain;
+    background: #fff; border: 1px solid #eee; border-radius: 16px; display: block;
+  }
+  .card h3 { font-size: 27px; margin: 16px 0 8px; line-height: 1.4; }
+  .meta { font-size: 20px; color: #555; margin: 0 0 6px; }
+  .price { font-size: 30px; font-weight: 800; color: #b3261e; margin: 8px 0 18px; }
+  .pnote { display: block; font-size: 16px; font-weight: 400; color: #777; }
+  .cta {
+    display: block; text-align: center; text-decoration: none;
+    background: #1565c0; color: #fff; font-size: 24px; font-weight: 800;
+    padding: 20px 16px; border-radius: 18px; min-height: 76px;
+  }
+  .cta:active { background: #0d47a1; }
+  footer { text-align: center; margin-top: 36px; }
+  footer .disclosure { background: #ece7d9; color: #333; }
+  .totop {
+    display: inline-block; margin-top: 20px; font-size: 20px; color: #2e5d33;
+    font-weight: 700; text-decoration: none; padding: 14px 28px;
+    border: 2px solid #2e5d33; border-radius: 999px; background: #fff;
+  }
+  .updated { text-align: center; color: #888; font-size: 16px; margin-top: 24px; }
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+
+  <header class="top">
+    <p class="brand">🧺 든든한 장보기</p>
+    <p class="tagline">영상으로 소개한 상품을 한 곳에 모았어요</p>
+    <p class="disclosure">이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)</p>
+  </header>
+
+  <section class="howto">
+    <h2>📱 구매 방법 (두 단계)</h2>
+    <ol>
+      <li><span class="step">1</span><span>원하는 상품 아래의 <strong>파란 버튼</strong>을 누르세요</span></li>
+      <li><span class="step">2</span><span>쿠팡 페이지가 열리면 평소대로 구매하시면 됩니다</span></li>
+    </ol>
+  </section>
+
+  <h2 class="list-title">🛒 추천 상품 목록</h2>
+  <main>
+  <article class="card">
+    <span class="badge">영상 EP09</span>
+    <img class="pimg" src="images/ep09.jpg" alt="곰곰 노르웨이 간고등어살 1kg" loading="lazy">
+    <h3>곰곰 노르웨이 간고등어살 1kg</h3>
+    <p class="meta">상품평 102,909개 · 별점 4.5</p>
+    <p class="price">24,000원 <span class="pnote">(2026-10-01 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/huRphNOjIq">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP08</span>
+    <img class="pimg" src="images/ep08.jpg" alt="오뚜기 진라면 매운맛 120g × 10개" loading="lazy">
+    <h3>오뚜기 진라면 매운맛 120g × 10개</h3>
+    <p class="meta">상품평 569,398개 · 별점 5</p>
+    <p class="price">7,130원 <span class="pnote">(2026-10-01 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/huRng6eeM8">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP07</span>
+    <img class="pimg" src="images/ep07.jpg" alt="곰곰 광천 도시락김 5g × 32개" loading="lazy">
+    <h3>곰곰 광천 도시락김 5g × 32개</h3>
+    <p class="meta">상품평 288,464개 · 별점 5</p>
+    <p class="price">10,780원 <span class="pnote">(2026-10-01 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/huRsLMXCnY">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP06</span>
+    <img class="pimg" src="images/ep06.jpg" alt="곰곰 태추단감 1kg" loading="lazy">
+    <h3>곰곰 태추단감 1kg</h3>
+    <p class="meta">상품평 194개</p>
+    <p class="price">11,410원 <span class="pnote">(2026-09-30 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/hudlox3TiK">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP05</span>
+    <img class="pimg" src="images/ep05.jpg" alt="곰곰 홍로 햇사과 850g (4입)" loading="lazy">
+    <h3>곰곰 홍로 햇사과 850g (4입)</h3>
+    <p class="meta">상품평 2,764개</p>
+    <p class="price">9,100원 <span class="pnote">(2026-09-30 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/hudgr45inI">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP04</span>
+    <img class="pimg" src="images/ep04.jpg" alt="귤탐 당도선별 감귤 2kg (로열과)" loading="lazy">
+    <h3>귤탐 당도선별 감귤 2kg (로열과)</h3>
+    <p class="meta">상품평 139,838개</p>
+    <p class="price">19,900원 <span class="pnote">(2026-09-30 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/hudcqrak44">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP03</span>
+    <img class="pimg" src="images/ep03.jpg" alt="해남 밤고구마 3kg" loading="lazy">
+    <h3>해남 밤고구마 3kg</h3>
+    <p class="meta">쿠팡에서 자세한 정보를 확인하세요</p>
+    <p class="price">가격은 쿠팡에서 확인 <span class="pnote"></span></p>
+    <a class="cta" href="https://link.coupang.com/a/hsKafm30Oy">쿠팡에서 상품 보기</a>
+  </article>
+  <article class="card">
+    <span class="badge">영상 EP02</span>
+    <img class="pimg" src="images/ep02.jpg" alt="월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)" loading="lazy">
+    <h3>월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)</h3>
+    <p class="meta">상품평 45,378개 · 별점 5</p>
+    <p class="price">15,800원 <span class="pnote">(2026-09-29 확인 · 가격은 변동될 수 있어요)</span></p>
+    <a class="cta" href="https://link.coupang.com/a/hrBfPBvPSm">쿠팡에서 상품 보기</a>
+  </article>
+  </main>
+
+  <footer>
+    <p class="disclosure">이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)</p>
+    <br>
+    <a class="totop" href="#top">맨 위로 올라가기 ↑</a>
+    <p class="updated">마지막 업데이트: 2026-10-02</p>
+  </footer>
+
+</div>
+</body>
+</html>
