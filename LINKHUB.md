@@ -3,7 +3,7 @@
 쇼츠 댓글·설명란의 링크가 클릭되지 않는 유튜브 정책(2023-08-31~) 대응용.
 채널 프로필의 클릭 가능한 링크로 연결되는 상품 모음 페이지.
 
-- 공개 URL: (GitHub Pages 배포 후 기입)
+- 공개 URL: https://sundayaa.github.io/jangbogi-links/ (GitHub Pages, 2026-10-02 개설)
 - 채널 프로필 링크 문구: 🛒 영상의 상품 보기
 
 ## 구조
