@@ -19,7 +19,6 @@ def esc(s):
 
 
 CARD = """  <article class="card">
-    <span class="badge">영상 {ep}</span>
     <img class="pimg" src="{image}" alt="{name}" loading="lazy">
     <h3>{name}</h3>
     <p class="meta">{meta}</p>
@@ -68,10 +67,6 @@ PAGE = """<!DOCTYPE html>
   .card {{
     background: #fff; border-radius: 24px; padding: 20px; margin-bottom: 28px;
     box-shadow: 0 3px 14px rgba(0,0,0,.10); border: 1px solid #e8e2d5;
-  }}
-  .badge {{
-    display: inline-block; background: #fff3d6; color: #7a5b00;
-    font-size: 18px; font-weight: 700; border-radius: 999px; padding: 6px 16px; margin-bottom: 12px;
   }}
   .pimg {{
     width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain;
@@ -145,7 +140,6 @@ def render_card(p):
     elif p.get("price"):
         pnote = "(가격은 변동될 수 있어요)"
     return CARD.format(
-        ep=esc(p.get("ep", "")),
         image=esc(p.get("image", "")),
         name=esc(p.get("name", "상품")),
         meta=esc(meta),
