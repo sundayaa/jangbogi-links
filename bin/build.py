@@ -121,6 +121,10 @@ PAGE = """<!DOCTYPE html>
   </footer>
 
 </div>
+<!-- Cloudflare Web Analytics (방문자 통계, 2026-10-03 추가) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js'
+  data-cf-beacon='{{"token": "954984c2c2444153b49c68c9112377fd"}}'></script>
+<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """
