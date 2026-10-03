@@ -4,6 +4,17 @@
   "products": [
     {
       "date": "2026-10-03",
+      "ep": "EP11",
+      "image": "images/ep11-kitchentowel.jpg",
+      "name": "코멧 깨끗한 천연펄프 2겹 키친타올 150매 8롤",
+      "price": "6,860원",
+      "price_checked": "2026-10-03",
+      "rating": "5",
+      "reviews": "231,434개",
+      "url": "https://link.coupang.com/a/hxsdNlCNlk"
+    },
+    {
+      "date": "2026-10-03",
       "ep": "EP10",
       "image": "images/ep10-eggs.jpg",
       "name": "곰곰 무항생제 신선한 특란 30구",
