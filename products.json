@@ -3,6 +3,39 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP15",
+      "name": "스팸 클래식 200g x 9개 (CJ제일제당)",
+      "price": "24,900원",
+      "price_checked": "2026-10-03",
+      "reviews": "151,105개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hx5083Xm1s",
+      "image": "images/ep15-spam.jpg",
+      "date": "2026-10-03"
+    },
+    {
+      "ep": "EP14",
+      "name": "종가 포기김치 4kg (대상)",
+      "price": "36,180원",
+      "price_checked": "2026-10-03",
+      "reviews": "91,523개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hx5XRpcPPU",
+      "image": "images/ep14-kimchi.jpg",
+      "date": "2026-10-03"
+    },
+    {
+      "ep": "EP13",
+      "name": "햇반 백미밥 210g x 12개 (CJ제일제당)",
+      "price": "13,640원",
+      "price_checked": "2026-10-03",
+      "reviews": "552,050개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hx5UlHIRJ6",
+      "image": "images/ep13-hatban.jpg",
+      "date": "2026-10-03"
+    },
+    {
       "ep": "EP12",
       "name": "비비고 왕교자 (냉동) 1.05kg x 5개",
       "price": "46,010원",
