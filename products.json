@@ -3,6 +3,42 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP21",
+      "name": "곰곰 2026년산 햅쌀 소중한 우리쌀 상등급 - 백미",
+      "price": "17,390~24,500원",
+      "price_checked": "2026-10-05",
+      "reviews": "632,247개",
+      "rating": "4.7",
+      "image": "images/ep21-rice.jpg",
+      "url": "https://www.coupang.com/vp/products/166996432",
+      "date": "2026-10-05",
+      "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
+    },
+    {
+      "ep": "EP20",
+      "name": "코멧 순백 3겹 라벤더 바닐라 롤화장지, 30m",
+      "price": "11,990~19,900원",
+      "price_checked": "2026-10-05",
+      "reviews": "923,888개",
+      "rating": "4.7",
+      "image": "images/ep20-toiletpaper.jpg",
+      "url": "https://www.coupang.com/vp/products/261192458",
+      "date": "2026-10-05",
+      "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
+    },
+    {
+      "ep": "EP19",
+      "name": "비비고 사골곰탕, 500g, 5개",
+      "price": "5,450~8,400원",
+      "price_checked": "2026-10-05",
+      "reviews": "187,080개",
+      "rating": "4.8",
+      "image": "images/ep19-sagolgomtang.jpg",
+      "url": "https://www.coupang.com/vp/products/7527803282",
+      "date": "2026-10-05",
+      "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
+    },
+    {
       "ep": "EP18",
       "name": "제주삼다수 그린 무라벨 2L x 6개",
       "price": "6,340원",
@@ -12,7 +48,7 @@
       "image": "images/ep18-samdasu.jpg",
       "url": "https://link.coupang.com/a/hzSJaXVfcy",
       "date": "2026-10-04",
-      "note": "제휴 링크 미발급 (SMS 2FA) — 쿠팡 상품 페이지"
+      "note": "제휴 링크 발급 완료"
     },
     {
       "ep": "EP17",
@@ -24,7 +60,7 @@
       "image": "images/ep17-milk.jpg",
       "url": "https://link.coupang.com/a/hzSyKd1LIO",
       "date": "2026-10-04",
-      "note": "제휴 링크 미발급 (SMS 2FA) — 쿠팡 상품 페이지"
+      "note": "제휴 링크 발급 완료"
     },
     {
       "ep": "EP16",
@@ -36,7 +72,7 @@
       "image": "images/ep16-dubu.jpg",
       "url": "https://link.coupang.com/a/hzSwPNNtT2",
       "date": "2026-10-04",
-      "note": "제휴 링크 미발급 (SMS 2FA) — 쿠팡 상품 페이지"
+      "note": "제휴 링크 발급 완료"
     },
     {
       "ep": "EP15",
