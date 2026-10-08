@@ -3,28 +3,34 @@
  "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
  "products": [
   {
-   "date": "2026-10-09",
    "ep": "EP30",
-   "image": "images/ep30.jpg",
+   "date": "2026-10-09",
    "name": "광동 V라인 옥수수수염차, 500ml",
-   "price": "6개 9,000원 / 24개 21,600원",
-   "price_checked": "2026-10-08",
-   "rating": "미확인",
-   "reviews": "147,162개",
+   "price": "미확인",
+   "reviews": "미확인",
    "url": null,
-   "url_note": "제휴 링크 미발급(아침 브라우저 발급 예정) — url은 아침 작업자가 발급 후 채움"
+   "url_note": "제휴 링크 미발급 (아침 발급 예정)",
+   "image": "images/ep30.jpg"
   },
   {
-   "date": "2026-10-09",
    "ep": "EP29",
-   "image": "images/ep29.jpg",
-   "name": "청정원순창 양념듬뿍 쌈장, 500g",
-   "price": "2,950원",
-   "price_checked": "2026-10-08",
-   "rating": "미확인",
-   "reviews": "10만개 이상",
+   "date": "2026-10-09",
+   "name": "오리온 초코파이 (다이소 근본이즘 한정판)",
+   "price": "미확인",
+   "reviews": "미확인",
    "url": null,
-   "url_note": "제휴 링크 미발급(아침 브라우저 발급 예정) — url은 아침 작업자가 발급 후 채움"
+   "url_note": "제휴 링크 미발급 (아침 발급 예정)",
+   "image": "images/ep29-chocopie.jpg"
+  },
+  {
+   "ep": "EP28",
+   "date": "2026-10-09",
+   "name": "해태 에이스 (다이소 근본이즘 한정판)",
+   "price": "미확인",
+   "reviews": "미확인",
+   "url": null,
+   "url_note": "제휴 링크 미발급 (아침 발급 예정)",
+   "image": "images/ep28-ace.jpg"
   },
   {
    "date": "2026-10-07",
