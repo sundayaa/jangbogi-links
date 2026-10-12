@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP45",
+      "date": "2026-10-15",
+      "name": "농심 바나나킥 75g 10개",
+      "price": "11,870원 (변동 가능)",
+      "reviews": "20,947개",
+      "url": null,
+      "image": "images/ep45.jpg"
+    },
+    {
+      "ep": "EP44",
+      "date": "2026-10-15",
+      "name": "롯데 카스타드 오리지널 230g 3개",
+      "price": "11,700원 (변동 가능)",
+      "reviews": "66,254개",
+      "url": null,
+      "image": "images/ep44.jpg"
+    },
+    {
+      "ep": "EP43",
+      "date": "2026-10-14",
+      "name": "롯데 칠성사이다 350ml 24개",
+      "price": "17,540원 (변동 가능)",
+      "reviews": "350,300개",
+      "url": null,
+      "image": "images/ep43.jpg"
+    },
+    {
       "ep": "EP42",
       "date": "2026-10-14",
       "name": "CJ제일제당 햇반 백미 210g",
