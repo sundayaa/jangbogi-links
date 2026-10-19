@@ -1,599 +1,599 @@
 {
- "channel": "든든한 장보기",
- "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
- "products": [
-  {
-   "ep": "EP60",
-   "date": "2026-10-20",
-   "name": "미쟝센 퍼펙트 오리지널 세럼 샴푸 900ml",
-   "price": "5,700원 쿠폰가 (변동 가능)",
-   "reviews": "70,794개",
-   "url": null,
-   "image": "images/ep60.jpg"
-  },
-  {
-   "ep": "EP59",
-   "date": "2026-10-20",
-   "name": "귤담원 제주 제철 감귤 5kg 대과",
-   "price": "10,900원 쿠폰가 (변동 가능)",
-   "reviews": "83,768개",
-   "url": null,
-   "image": "images/ep59.jpg"
-  },
-  {
-   "ep": "EP58",
-   "date": "2026-10-20",
-   "name": "한솔템 스테인리스 완벽 물빠짐 수세미 거치대",
-   "price": "7,800원 (변동 가능)",
-   "reviews": "1,632개",
-   "url": null,
-   "image": "images/ep58.jpg"
-  },
-  {
-   "ep": "EP57",
-   "date": "2026-10-19",
-   "name": "크리넥스 울트라클린 천연펄프 3겹 고급롤화장지 (27m, 30롤)",
-   "price": "19,140원 (변동 가능)",
-   "reviews": "98,885개",
-   "url": null,
-   "image": "images/ep57.jpg"
-  },
-  {
-   "ep": "EP56",
-   "date": "2026-10-19",
-   "name": "삼립 발효미종 정통단팥 호빵 (380g, 4개입)",
-   "price": "와우할인가 5,200원 (변동 가능)",
-   "reviews": "12,957개",
-   "url": "https://link.coupang.com/a/hX21MpAWcK",
-   "image": "images/ep56.jpg"
-  },
-  {
-   "ep": "EP55",
-   "date": "2026-10-19",
-   "name": "마켓플랜 실리콘 만능 뚜껑 세트 (원형)",
-   "price": "4,500원 (변동 가능)",
-   "reviews": "5,028개",
-   "url": null,
-   "image": "images/ep55.jpg"
-  },
-  {
-   "ep": "EP54",
-   "date": "2026-10-18",
-   "name": "롯데 꼬깔콘 고소한맛 67g 12개입",
-   "price": "12,410원 (변동 가능)",
-   "reviews": "7,770개",
-   "url": null,
-   "image": "images/ep54.jpg"
-  },
-  {
-   "ep": "EP53",
-   "date": "2026-10-18",
-   "name": "농심 양파링 오리지널 80g 16개",
-   "price": "19,100원 (변동 가능)",
-   "reviews": "27,018개",
-   "url": null,
-   "image": "images/ep53.jpg"
-  },
-  {
-   "ep": "EP52",
-   "date": "2026-10-18",
-   "name": "롯데 빼빼로 오리지널 54g 10개",
-   "price": "12,150원 (변동 가능)",
-   "reviews": "28,018개",
-   "url": "https://link.coupang.com/a/hV2KmYk6SG",
-   "image": "images/ep52.jpg"
-  },
-  {
-   "ep": "EP48",
-   "date": "2026-10-16",
-   "name": "해태 부라보콘 바닐라 160ml 24개",
-   "price": "27,490원 (변동 가능)",
-   "reviews": "717개",
-   "url": null,
-   "image": "images/ep48.jpg"
-  },
-  {
-   "ep": "EP47",
-   "date": "2026-10-16",
-   "name": "닥터유 다이제 초코 225g 5개 (오리온)",
-   "price": "10,350원 (변동 가능)",
-   "reviews": "20,117개",
-   "url": null,
-   "image": "images/ep47.jpg"
-  },
-  {
-   "ep": "EP46",
-   "date": "2026-10-16",
-   "name": "농심 너구리 얼큰한 맛 120g 20개",
-   "price": "15,910원 (쿠폰 적용가·변동 가능)",
-   "reviews": "미확인 (한 달간 800명 이상 구매)",
-   "url": null,
-   "image": "images/ep46.jpg"
-  },
-  {
-   "ep": "EP45",
-   "date": "2026-10-15",
-   "name": "농심 바나나킥 75g 10개",
-   "price": "11,870원 (변동 가능)",
-   "reviews": "20,947개",
-   "url": null,
-   "image": "images/ep45.jpg"
-  },
-  {
-   "ep": "EP44",
-   "date": "2026-10-15",
-   "name": "롯데 카스타드 오리지널 230g 3개",
-   "price": "11,700원 (변동 가능)",
-   "reviews": "66,254개",
-   "url": null,
-   "image": "images/ep44.jpg"
-  },
-  {
-   "ep": "EP43",
-   "date": "2026-10-14",
-   "name": "롯데 칠성사이다 350ml 24개",
-   "price": "17,540원 (변동 가능)",
-   "reviews": "350,300개",
-   "url": null,
-   "image": "images/ep43.jpg"
-  },
-  {
-   "ep": "EP42",
-   "date": "2026-10-14",
-   "name": "CJ제일제당 햇반 백미 210g",
-   "price": "16개입 19,200원 (변동 가능)",
-   "reviews": "미확인",
-   "url": null,
-   "image": null
-  },
-  {
-   "ep": "EP41",
-   "date": "2026-10-14",
-   "name": "오리온 고래밥 볶음양념맛 20g 10개",
-   "price": "3,770원 (변동 가능)",
-   "reviews": "미확인",
-   "url": null,
-   "image": "images/ep41.jpg"
-  },
-  {
-   "ep": "EP40",
-   "date": "2026-10-13",
-   "name": "농심 신라면 120g",
-   "price": "5개 4,150원 (변동 가능)",
-   "reviews": "77,962개",
-   "url": null,
-   "image": "images/ep40.jpg"
-  },
-  {
-   "ep": "EP39",
-   "date": "2026-10-13",
-   "name": "해태제과 맛동산 70g 4개",
-   "price": "4,000원대",
-   "reviews": "116,856개",
-   "url": null,
-   "image": null
-  },
-  {
-   "ep": "EP38",
-   "date": "2026-10-13",
-   "name": "삼양라면 120g 10개",
-   "price": "5,040원",
-   "reviews": "215,066개",
-   "url": null,
-   "image": null
-  },
-  {
-   "ep": "EP37",
-   "date": "2026-10-12",
-   "name": "동서 맥심 모카골드 마일드 커피믹스 12g 160개입",
-   "price": "24,400원",
-   "reviews": "787,996개",
-   "url": null,
-   "image": null
-  },
-  {
-   "ep": "EP33",
-   "date": "2026-10-11",
-   "name": "농심 육개장 사발면 86g",
-   "price": "86g 6개 5,670원",
-   "reviews": "550,473개",
-   "url": "https://link.coupang.com/a/hIVQ5ZIiqa",
-   "image": "images/ep33.jpg"
-  },
-  {
-   "ep": "EP32",
-   "date": "2026-10-10",
-   "name": "팔도 비빔면 130g, 10개",
-   "price": "10개 8,000원",
-   "reviews": "173,880개",
-   "url": "https://link.coupang.com/a/hIVP0dexjM",
-   "image": "images/ep32.jpg"
-  },
-  {
-   "ep": "EP31",
-   "date": "2026-10-10",
-   "name": "농심 새우깡",
-   "price": "4,560원",
-   "reviews": "114,014개",
-   "url": "https://link.coupang.com/a/hIVO0ylnR6",
-   "image": "images/ep31.jpg"
-  },
-  {
-   "ep": "EP30",
-   "date": "2026-10-09",
-   "name": "광동 V라인 옥수수수염차, 500ml",
-   "price": "미확인",
-   "reviews": "미확인",
-   "url": "https://link.coupang.com/a/hG7S8zxNcq",
-   "image": "images/ep30.jpg"
-  },
-  {
-   "ep": "EP29",
-   "date": "2026-10-09",
-   "name": "오리온 초코파이 (다이소 근본이즘 한정판)",
-   "price": "미확인",
-   "reviews": "미확인",
-   "url": "https://link.coupang.com/a/hG7QCaqlUjA",
-   "image": "images/ep29-chocopie.jpg"
-  },
-  {
-   "ep": "EP28",
-   "date": "2026-10-09",
-   "name": "해태 에이스 (다이소 근본이즘 한정판)",
-   "price": "미확인",
-   "reviews": "미확인",
-   "url": "https://link.coupang.com/a/hG7lEHfGwe",
-   "image": "images/ep28-ace.jpg"
-  },
-  {
-   "date": "2026-10-08",
-   "ep": "EP26",
-   "image": "images/ep26-banana.jpg",
-   "name": "스미후루 필리핀산 감숙왕 바나나, 1kg 내외",
-   "note": "제휴 링크 미발급(아침 브라우저 발급 예정) — url은 parent가 발급 후 채움",
-   "price": "3,770원",
-   "price_checked": "2026-10-07",
-   "rating": "미확인",
-   "reviews": "259,942개",
-   "url": "https://link.coupang.com/a/hFsmh13Qtg"
-  },
-  {
-   "date": "2026-10-08",
-   "ep": "EP25",
-   "image": "images/ep25-haepyo-oil.jpg",
-   "name": "사조 해표 콩기름 식용유, 900ml, 2개",
-   "note": "제휴 링크 미발급(아침 브라우저 발급 예정) — url은 parent가 발급 후 채움",
-   "price": "7,880원",
-   "price_checked": "2026-10-07",
-   "rating": "미확인",
-   "reviews": "404,328개",
-   "url": "https://link.coupang.com/a/hFskCMeHUy"
-  },
-  {
-   "date": "2026-10-07",
-   "ep": "EP27",
-   "image": "images/ep27.jpg",
-   "name": "탐사 파워워시 액체세제 본품, 2.5L, 4개",
-   "price": "10,990원",
-   "price_checked": "2026-10-07",
-   "rating": "미확인",
-   "reviews": "259,259개",
-   "url": "https://link.coupang.com/a/hFsjnL7hds"
-  },
-  {
-   "ep": "EP24",
-   "name": "청정원순창 현미 태양초 찰고추장, 3kg",
-   "price": "10,450원",
-   "price_checked": "2026-10-06",
-   "reviews": "197,706개",
-   "rating": "미확인",
-   "image": "images/ep24-gochujang.jpg",
-   "url": "https://link.coupang.com/a/hDOogHKbAa",
-   "date": "2026-10-06",
-   "note": "제휴 링크 미발급 (쿠팡 야간 봇 차단) — 2026-10-07 아침 발급 후 url 교체 예정"
-  },
-  {
-   "ep": "EP23",
-   "name": "탐사 클래식 물티슈 캡형, 100매, 10개",
-   "price": "약 7,890원",
-   "price_checked": "2026-10-06",
-   "reviews": "31만개 이상",
-   "rating": "4.6",
-   "image": "images/ep23-wetwipes.jpg",
-   "url": "https://link.coupang.com/a/hDOiSB9GMe",
-   "date": "2026-10-06",
-   "note": "제휴 링크 미발급 (쿠팡 야간 봇 차단) — 2026-10-07 아침 상품 검색으로 url 확인·교체 예정"
-  },
-  {
-   "ep": "EP22",
-   "name": "동원참치 라이트 스탠다드, 250g, 10개",
-   "price": "31,190원",
-   "price_checked": "2026-10-06",
-   "reviews": "133,763개",
-   "rating": "미확인",
-   "image": "images/ep22-chamchi.jpg",
-   "url": "https://link.coupang.com/a/hDNTpwLF7I",
-   "date": "2026-10-06",
-   "note": "제휴 링크 미발급 (쿠팡 야간 봇 차단) — 2026-10-07 아침 발급 후 url 교체 예정"
-  },
-  {
-   "ep": "EP21",
-   "name": "곰곰 2026년산 햅쌀 소중한 우리쌀 상등급 - 백미",
-   "price": "17,390~24,500원",
-   "price_checked": "2026-10-05",
-   "reviews": "632,247개",
-   "rating": "4.7",
-   "image": "images/ep21-rice.jpg",
-   "url": "https://link.coupang.com/a/hBARQS13Js",
-   "date": "2026-10-05",
-   "note": "제휴 링크 발급 완료 (2026-10-06 아침)"
-  },
-  {
-   "ep": "EP20",
-   "name": "코멧 순백 3겹 라벤더 바닐라 롤화장지, 30m",
-   "price": "11,990~19,900원",
-   "price_checked": "2026-10-05",
-   "reviews": "923,888개",
-   "rating": "4.7",
-   "image": "images/ep20-toiletpaper.jpg",
-   "url": "https://link.coupang.com/a/hBAox7rdHU",
-   "date": "2026-10-05",
-   "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
-  },
-  {
-   "ep": "EP19",
-   "name": "비비고 사골곰탕, 500g, 5개",
-   "price": "5,450~8,400원",
-   "price_checked": "2026-10-05",
-   "reviews": "187,080개",
-   "rating": "4.8",
-   "image": "images/ep19-sagolgomtang.jpg",
-   "url": "https://link.coupang.com/a/hBzVNCn2M8",
-   "date": "2026-10-05",
-   "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
-  },
-  {
-   "ep": "EP18",
-   "name": "제주삼다수 그린 무라벨 2L x 6개",
-   "price": "6,340원",
-   "price_checked": "2026-10-04",
-   "reviews": "1,056,903개",
-   "rating": "5",
-   "image": "images/ep18-samdasu.jpg",
-   "url": "https://link.coupang.com/a/hzSJaXVfcy",
-   "date": "2026-10-04",
-   "note": "제휴 링크 발급 완료"
-  },
-  {
-   "ep": "EP17",
-   "name": "서울우유 멸균 흰우유, 200ml, 24개",
-   "price": "14,900원",
-   "price_checked": "2026-10-04",
-   "reviews": "567,333개",
-   "rating": "5",
-   "image": "images/ep17-milk.jpg",
-   "url": "https://link.coupang.com/a/hzSyKd1LIO",
-   "date": "2026-10-04",
-   "note": "제휴 링크 발급 완료"
-  },
-  {
-   "ep": "EP16",
-   "name": "풀무원 특등급 국산콩 두부 부침찌개 겸용, 300g, 2개입",
-   "price": "4,980원",
-   "price_checked": "2026-10-04",
-   "reviews": "251,003개",
-   "rating": "5",
-   "image": "images/ep16-dubu.jpg",
-   "url": "https://link.coupang.com/a/hzSwPNNtT2",
-   "date": "2026-10-04",
-   "note": "제휴 링크 발급 완료"
-  },
-  {
-   "ep": "EP15",
-   "name": "스팸 클래식 200g x 9개 (CJ제일제당)",
-   "price": "24,900원",
-   "price_checked": "2026-10-03",
-   "reviews": "151,105개",
-   "rating": "미확인",
-   "url": "https://link.coupang.com/a/hx5083Xm1s",
-   "image": "images/ep15-spam.jpg",
-   "date": "2026-10-03"
-  },
-  {
-   "ep": "EP14",
-   "name": "종가 포기김치 4kg (대상)",
-   "price": "36,180원",
-   "price_checked": "2026-10-03",
-   "reviews": "91,523개",
-   "rating": "미확인",
-   "url": "https://link.coupang.com/a/hx5XRpcPPU",
-   "image": "images/ep14-kimchi.jpg",
-   "date": "2026-10-03"
-  },
-  {
-   "ep": "EP13",
-   "name": "햇반 백미밥 210g x 12개 (CJ제일제당)",
-   "price": "13,640원",
-   "price_checked": "2026-10-03",
-   "reviews": "552,050개",
-   "rating": "미확인",
-   "url": "https://link.coupang.com/a/hx5UlHIRJ6",
-   "image": "images/ep13-hatban.jpg",
-   "date": "2026-10-03"
-  },
-  {
-   "ep": "EP12",
-   "name": "비비고 왕교자 (냉동) 1.05kg x 5개",
-   "price": "46,010원",
-   "price_checked": "2026-10-03",
-   "reviews": "261,136개",
-   "rating": "미확인",
-   "url": "https://link.coupang.com/a/hxVAPIHrxY",
-   "image": "images/ep12-mandu.jpg",
-   "date": "2026-10-03",
-   "note": "제휴 링크 미발급 — 19:00 업로드 작업에서 쿠팡파트너스 링크 발급 후 url 교체 필요"
-  },
-  {
-   "date": "2026-10-03",
-   "ep": "EP11",
-   "image": "images/ep11-kitchentowel.jpg",
-   "name": "코멧 깨끗한 천연펄프 2겹 키친타올 150매 8롤",
-   "price": "6,860원",
-   "price_checked": "2026-10-03",
-   "rating": "5",
-   "reviews": "231,434개",
-   "url": "https://link.coupang.com/a/hxsdNlCNlk"
-  },
-  {
-   "date": "2026-10-03",
-   "ep": "EP10",
-   "image": "images/ep10-eggs.jpg",
-   "name": "곰곰 무항생제 신선한 특란 30구",
-   "price": "8,490원",
-   "price_checked": "2026-10-03",
-   "rating": "5",
-   "reviews": "391,439개",
-   "url": "https://link.coupang.com/a/hxqAtNzHSm"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP09",
-   "image": "images/ep09.jpg",
-   "name": "곰곰 노르웨이 간고등어살 1kg",
-   "price": "24,000원",
-   "price_checked": "2026-10-02",
-   "rating": "5",
-   "reviews": "102,912개",
-   "url": "https://link.coupang.com/a/huRphNOjIq"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP08",
-   "image": "images/ep08.jpg",
-   "name": "오뚜기 진라면 매운맛 120g × 10개",
-   "price": "7,130원",
-   "price_checked": "2026-10-02",
-   "rating": "5",
-   "reviews": "569,424개",
-   "url": "https://link.coupang.com/a/huRng6eeM8"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP07",
-   "image": "images/ep07.jpg",
-   "name": "곰곰 광천 도시락김 5g × 32개",
-   "price": "10,780원",
-   "price_checked": "2026-10-02",
-   "rating": "5",
-   "reviews": "288,483개",
-   "url": "https://link.coupang.com/a/huRsLMXCnY"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP06",
-   "image": "images/ep06.jpg",
-   "name": "곰곰 태추단감 1kg",
-   "price": "9,990원",
-   "price_checked": "2026-10-02",
-   "rating": "4.5",
-   "reviews": "195개",
-   "url": "https://link.coupang.com/a/hudlox3TiK"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP05",
-   "image": "images/ep05.jpg",
-   "name": "곰곰 홍로 햇사과 850g (4입)",
-   "price": "10,200원",
-   "price_checked": "2026-10-02",
-   "rating": "5",
-   "reviews": "2,772개",
-   "url": "https://link.coupang.com/a/hudgr45inI"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP04",
-   "image": "images/ep04.jpg",
-   "name": "귤탐 당도선별 감귤 2kg (로열과)",
-   "price": "20,900원",
-   "price_checked": "2026-10-02",
-   "rating": "5",
-   "reviews": "139,900개",
-   "url": "https://link.coupang.com/a/hudcqrak44"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP03",
-   "image": "images/ep03.jpg",
-   "name": "해남 달망 밤고구마 5kg (특상) 1박스",
-   "price": "15,990원",
-   "price_checked": "2026-10-02",
-   "rating": "4.5",
-   "reviews": "54,279개",
-   "url": "https://link.coupang.com/a/hsKafm30Oy"
-  },
-  {
-   "date": "2026-10-02",
-   "ep": "EP02",
-   "image": "images/ep02.jpg",
-   "name": "월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)",
-   "price": "15,800원",
-   "price_checked": "2026-10-02",
-   "rating": "5",
-   "reviews": "45,439개",
-   "url": "https://link.coupang.com/a/hrBfPBvPSm"
-  },
-  {
-   "ep": "EP36",
-   "product": "해태제과 홈런볼 초코 41g 4개",
-   "price": "4개 4,960원대 (변동 가능)",
-   "affiliate_link": null,
-   "coupang_url": "https://www.coupang.com/vp/products/6429441553",
-   "note": "제휴 링크 미발급 — 브라우저 발급 예정"
-  },
-  {
-   "ep": "EP35",
-   "product": "청정원 햇살담은 두번달여 더 진한 진간장 1.7L 2개",
-   "price": "2개 11,600원대 (변동 가능)",
-   "affiliate_link": null,
-   "coupang_url": "https://www.coupang.com/vp/products/6988712167?vendorItemId=86533286428",
-   "note": "제휴 링크 미발급 — 브라우저 발급 예정"
-  },
-  {
-   "ep": "EP34",
-   "product": "빙그레 바나나맛우유 240ml 24개",
-   "price": "미확인",
-   "affiliate_link": null,
-   "coupang_url": null,
-   "note": "제휴 링크 미발급 — 브라우저 발급 예정"
-  },
-  {
-   "ep": "EP49",
-   "date": "2026-10-17",
-   "name": "오리온 초코파이 정 12개입 (468g)",
-   "price": "8,200원 (변동 가능)",
-   "reviews": "150,473개",
-   "url": null,
-   "image": "images/ep49.jpg"
-  },
-  {
-   "ep": "EP50",
-   "date": "2026-10-17",
-   "name": "농심 새우깡 90g 20개",
-   "price": "16,310원 (변동 가능)",
-   "reviews": "8,729개",
-   "url": null,
-   "image": "images/ep50.jpg"
-  },
-  {
-   "ep": "EP51",
-   "date": "2026-10-17",
-   "name": "빙그레 메로나 멜론맛 (75ml × 20개)",
-   "price": "미확인",
-   "reviews": "미확인",
-   "url": null,
-   "image": "images/ep51.jpg"
-  }
- ],
- "updated": "2026-10-18"
+  "channel": "든든한 장보기",
+  "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
+  "products": [
+    {
+      "ep": "EP60",
+      "date": "2026-10-20",
+      "name": "미쟝센 퍼펙트 오리지널 세럼 샴푸 900ml",
+      "price": "5,700원 쿠폰가 (변동 가능)",
+      "reviews": "70,794개",
+      "url": null,
+      "image": "images/ep60.jpg"
+    },
+    {
+      "ep": "EP59",
+      "date": "2026-10-20",
+      "name": "귤담원 제주 제철 감귤 5kg 대과",
+      "price": "10,900원 쿠폰가 (변동 가능)",
+      "reviews": "83,768개",
+      "url": null,
+      "image": "images/ep59.jpg"
+    },
+    {
+      "ep": "EP58",
+      "date": "2026-10-20",
+      "name": "한솔템 스테인리스 완벽 물빠짐 수세미 거치대",
+      "price": "7,800원 (변동 가능)",
+      "reviews": "1,632개",
+      "url": null,
+      "image": "images/ep58.jpg"
+    },
+    {
+      "ep": "EP57",
+      "date": "2026-10-19",
+      "name": "크리넥스 울트라클린 천연펄프 3겹 고급롤화장지 (27m, 30롤)",
+      "price": "19,140원 (변동 가능)",
+      "reviews": "98,885개",
+      "url": "https://link.coupang.com/a/hYsTvMzipg",
+      "image": "images/ep57.jpg"
+    },
+    {
+      "ep": "EP56",
+      "date": "2026-10-19",
+      "name": "삼립 발효미종 정통단팥 호빵 (380g, 4개입)",
+      "price": "와우할인가 5,200원 (변동 가능)",
+      "reviews": "12,957개",
+      "url": "https://link.coupang.com/a/hX21MpAWcK",
+      "image": "images/ep56.jpg"
+    },
+    {
+      "ep": "EP55",
+      "date": "2026-10-19",
+      "name": "마켓플랜 실리콘 만능 뚜껑 세트 (원형)",
+      "price": "4,500원 (변동 가능)",
+      "reviews": "5,028개",
+      "url": null,
+      "image": "images/ep55.jpg"
+    },
+    {
+      "ep": "EP54",
+      "date": "2026-10-18",
+      "name": "롯데 꼬깔콘 고소한맛 67g 12개입",
+      "price": "12,410원 (변동 가능)",
+      "reviews": "7,770개",
+      "url": null,
+      "image": "images/ep54.jpg"
+    },
+    {
+      "ep": "EP53",
+      "date": "2026-10-18",
+      "name": "농심 양파링 오리지널 80g 16개",
+      "price": "19,100원 (변동 가능)",
+      "reviews": "27,018개",
+      "url": null,
+      "image": "images/ep53.jpg"
+    },
+    {
+      "ep": "EP52",
+      "date": "2026-10-18",
+      "name": "롯데 빼빼로 오리지널 54g 10개",
+      "price": "12,150원 (변동 가능)",
+      "reviews": "28,018개",
+      "url": "https://link.coupang.com/a/hV2KmYk6SG",
+      "image": "images/ep52.jpg"
+    },
+    {
+      "ep": "EP48",
+      "date": "2026-10-16",
+      "name": "해태 부라보콘 바닐라 160ml 24개",
+      "price": "27,490원 (변동 가능)",
+      "reviews": "717개",
+      "url": null,
+      "image": "images/ep48.jpg"
+    },
+    {
+      "ep": "EP47",
+      "date": "2026-10-16",
+      "name": "닥터유 다이제 초코 225g 5개 (오리온)",
+      "price": "10,350원 (변동 가능)",
+      "reviews": "20,117개",
+      "url": null,
+      "image": "images/ep47.jpg"
+    },
+    {
+      "ep": "EP46",
+      "date": "2026-10-16",
+      "name": "농심 너구리 얼큰한 맛 120g 20개",
+      "price": "15,910원 (쿠폰 적용가·변동 가능)",
+      "reviews": "미확인 (한 달간 800명 이상 구매)",
+      "url": null,
+      "image": "images/ep46.jpg"
+    },
+    {
+      "ep": "EP45",
+      "date": "2026-10-15",
+      "name": "농심 바나나킥 75g 10개",
+      "price": "11,870원 (변동 가능)",
+      "reviews": "20,947개",
+      "url": null,
+      "image": "images/ep45.jpg"
+    },
+    {
+      "ep": "EP44",
+      "date": "2026-10-15",
+      "name": "롯데 카스타드 오리지널 230g 3개",
+      "price": "11,700원 (변동 가능)",
+      "reviews": "66,254개",
+      "url": null,
+      "image": "images/ep44.jpg"
+    },
+    {
+      "ep": "EP43",
+      "date": "2026-10-14",
+      "name": "롯데 칠성사이다 350ml 24개",
+      "price": "17,540원 (변동 가능)",
+      "reviews": "350,300개",
+      "url": null,
+      "image": "images/ep43.jpg"
+    },
+    {
+      "ep": "EP42",
+      "date": "2026-10-14",
+      "name": "CJ제일제당 햇반 백미 210g",
+      "price": "16개입 19,200원 (변동 가능)",
+      "reviews": "미확인",
+      "url": null,
+      "image": null
+    },
+    {
+      "ep": "EP41",
+      "date": "2026-10-14",
+      "name": "오리온 고래밥 볶음양념맛 20g 10개",
+      "price": "3,770원 (변동 가능)",
+      "reviews": "미확인",
+      "url": null,
+      "image": "images/ep41.jpg"
+    },
+    {
+      "ep": "EP40",
+      "date": "2026-10-13",
+      "name": "농심 신라면 120g",
+      "price": "5개 4,150원 (변동 가능)",
+      "reviews": "77,962개",
+      "url": null,
+      "image": "images/ep40.jpg"
+    },
+    {
+      "ep": "EP39",
+      "date": "2026-10-13",
+      "name": "해태제과 맛동산 70g 4개",
+      "price": "4,000원대",
+      "reviews": "116,856개",
+      "url": null,
+      "image": null
+    },
+    {
+      "ep": "EP38",
+      "date": "2026-10-13",
+      "name": "삼양라면 120g 10개",
+      "price": "5,040원",
+      "reviews": "215,066개",
+      "url": null,
+      "image": null
+    },
+    {
+      "ep": "EP37",
+      "date": "2026-10-12",
+      "name": "동서 맥심 모카골드 마일드 커피믹스 12g 160개입",
+      "price": "24,400원",
+      "reviews": "787,996개",
+      "url": null,
+      "image": null
+    },
+    {
+      "ep": "EP33",
+      "date": "2026-10-11",
+      "name": "농심 육개장 사발면 86g",
+      "price": "86g 6개 5,670원",
+      "reviews": "550,473개",
+      "url": "https://link.coupang.com/a/hIVQ5ZIiqa",
+      "image": "images/ep33.jpg"
+    },
+    {
+      "ep": "EP32",
+      "date": "2026-10-10",
+      "name": "팔도 비빔면 130g, 10개",
+      "price": "10개 8,000원",
+      "reviews": "173,880개",
+      "url": "https://link.coupang.com/a/hIVP0dexjM",
+      "image": "images/ep32.jpg"
+    },
+    {
+      "ep": "EP31",
+      "date": "2026-10-10",
+      "name": "농심 새우깡",
+      "price": "4,560원",
+      "reviews": "114,014개",
+      "url": "https://link.coupang.com/a/hIVO0ylnR6",
+      "image": "images/ep31.jpg"
+    },
+    {
+      "ep": "EP30",
+      "date": "2026-10-09",
+      "name": "광동 V라인 옥수수수염차, 500ml",
+      "price": "미확인",
+      "reviews": "미확인",
+      "url": "https://link.coupang.com/a/hG7S8zxNcq",
+      "image": "images/ep30.jpg"
+    },
+    {
+      "ep": "EP29",
+      "date": "2026-10-09",
+      "name": "오리온 초코파이 (다이소 근본이즘 한정판)",
+      "price": "미확인",
+      "reviews": "미확인",
+      "url": "https://link.coupang.com/a/hG7QCaqlUjA",
+      "image": "images/ep29-chocopie.jpg"
+    },
+    {
+      "ep": "EP28",
+      "date": "2026-10-09",
+      "name": "해태 에이스 (다이소 근본이즘 한정판)",
+      "price": "미확인",
+      "reviews": "미확인",
+      "url": "https://link.coupang.com/a/hG7lEHfGwe",
+      "image": "images/ep28-ace.jpg"
+    },
+    {
+      "date": "2026-10-08",
+      "ep": "EP26",
+      "image": "images/ep26-banana.jpg",
+      "name": "스미후루 필리핀산 감숙왕 바나나, 1kg 내외",
+      "note": "제휴 링크 미발급(아침 브라우저 발급 예정) — url은 parent가 발급 후 채움",
+      "price": "3,770원",
+      "price_checked": "2026-10-07",
+      "rating": "미확인",
+      "reviews": "259,942개",
+      "url": "https://link.coupang.com/a/hFsmh13Qtg"
+    },
+    {
+      "date": "2026-10-08",
+      "ep": "EP25",
+      "image": "images/ep25-haepyo-oil.jpg",
+      "name": "사조 해표 콩기름 식용유, 900ml, 2개",
+      "note": "제휴 링크 미발급(아침 브라우저 발급 예정) — url은 parent가 발급 후 채움",
+      "price": "7,880원",
+      "price_checked": "2026-10-07",
+      "rating": "미확인",
+      "reviews": "404,328개",
+      "url": "https://link.coupang.com/a/hFskCMeHUy"
+    },
+    {
+      "date": "2026-10-07",
+      "ep": "EP27",
+      "image": "images/ep27.jpg",
+      "name": "탐사 파워워시 액체세제 본품, 2.5L, 4개",
+      "price": "10,990원",
+      "price_checked": "2026-10-07",
+      "rating": "미확인",
+      "reviews": "259,259개",
+      "url": "https://link.coupang.com/a/hFsjnL7hds"
+    },
+    {
+      "ep": "EP24",
+      "name": "청정원순창 현미 태양초 찰고추장, 3kg",
+      "price": "10,450원",
+      "price_checked": "2026-10-06",
+      "reviews": "197,706개",
+      "rating": "미확인",
+      "image": "images/ep24-gochujang.jpg",
+      "url": "https://link.coupang.com/a/hDOogHKbAa",
+      "date": "2026-10-06",
+      "note": "제휴 링크 미발급 (쿠팡 야간 봇 차단) — 2026-10-07 아침 발급 후 url 교체 예정"
+    },
+    {
+      "ep": "EP23",
+      "name": "탐사 클래식 물티슈 캡형, 100매, 10개",
+      "price": "약 7,890원",
+      "price_checked": "2026-10-06",
+      "reviews": "31만개 이상",
+      "rating": "4.6",
+      "image": "images/ep23-wetwipes.jpg",
+      "url": "https://link.coupang.com/a/hDOiSB9GMe",
+      "date": "2026-10-06",
+      "note": "제휴 링크 미발급 (쿠팡 야간 봇 차단) — 2026-10-07 아침 상품 검색으로 url 확인·교체 예정"
+    },
+    {
+      "ep": "EP22",
+      "name": "동원참치 라이트 스탠다드, 250g, 10개",
+      "price": "31,190원",
+      "price_checked": "2026-10-06",
+      "reviews": "133,763개",
+      "rating": "미확인",
+      "image": "images/ep22-chamchi.jpg",
+      "url": "https://link.coupang.com/a/hDNTpwLF7I",
+      "date": "2026-10-06",
+      "note": "제휴 링크 미발급 (쿠팡 야간 봇 차단) — 2026-10-07 아침 발급 후 url 교체 예정"
+    },
+    {
+      "ep": "EP21",
+      "name": "곰곰 2026년산 햅쌀 소중한 우리쌀 상등급 - 백미",
+      "price": "17,390~24,500원",
+      "price_checked": "2026-10-05",
+      "reviews": "632,247개",
+      "rating": "4.7",
+      "image": "images/ep21-rice.jpg",
+      "url": "https://link.coupang.com/a/hBARQS13Js",
+      "date": "2026-10-05",
+      "note": "제휴 링크 발급 완료 (2026-10-06 아침)"
+    },
+    {
+      "ep": "EP20",
+      "name": "코멧 순백 3겹 라벤더 바닐라 롤화장지, 30m",
+      "price": "11,990~19,900원",
+      "price_checked": "2026-10-05",
+      "reviews": "923,888개",
+      "rating": "4.7",
+      "image": "images/ep20-toiletpaper.jpg",
+      "url": "https://link.coupang.com/a/hBAox7rdHU",
+      "date": "2026-10-05",
+      "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
+    },
+    {
+      "ep": "EP19",
+      "name": "비비고 사골곰탕, 500g, 5개",
+      "price": "5,450~8,400원",
+      "price_checked": "2026-10-05",
+      "reviews": "187,080개",
+      "rating": "4.8",
+      "image": "images/ep19-sagolgomtang.jpg",
+      "url": "https://link.coupang.com/a/hBzVNCn2M8",
+      "date": "2026-10-05",
+      "note": "제휴 링크 미발급 (쿠팡 봇 차단) — 2026-10-06 아침 발급 후 교체 예정"
+    },
+    {
+      "ep": "EP18",
+      "name": "제주삼다수 그린 무라벨 2L x 6개",
+      "price": "6,340원",
+      "price_checked": "2026-10-04",
+      "reviews": "1,056,903개",
+      "rating": "5",
+      "image": "images/ep18-samdasu.jpg",
+      "url": "https://link.coupang.com/a/hzSJaXVfcy",
+      "date": "2026-10-04",
+      "note": "제휴 링크 발급 완료"
+    },
+    {
+      "ep": "EP17",
+      "name": "서울우유 멸균 흰우유, 200ml, 24개",
+      "price": "14,900원",
+      "price_checked": "2026-10-04",
+      "reviews": "567,333개",
+      "rating": "5",
+      "image": "images/ep17-milk.jpg",
+      "url": "https://link.coupang.com/a/hzSyKd1LIO",
+      "date": "2026-10-04",
+      "note": "제휴 링크 발급 완료"
+    },
+    {
+      "ep": "EP16",
+      "name": "풀무원 특등급 국산콩 두부 부침찌개 겸용, 300g, 2개입",
+      "price": "4,980원",
+      "price_checked": "2026-10-04",
+      "reviews": "251,003개",
+      "rating": "5",
+      "image": "images/ep16-dubu.jpg",
+      "url": "https://link.coupang.com/a/hzSwPNNtT2",
+      "date": "2026-10-04",
+      "note": "제휴 링크 발급 완료"
+    },
+    {
+      "ep": "EP15",
+      "name": "스팸 클래식 200g x 9개 (CJ제일제당)",
+      "price": "24,900원",
+      "price_checked": "2026-10-03",
+      "reviews": "151,105개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hx5083Xm1s",
+      "image": "images/ep15-spam.jpg",
+      "date": "2026-10-03"
+    },
+    {
+      "ep": "EP14",
+      "name": "종가 포기김치 4kg (대상)",
+      "price": "36,180원",
+      "price_checked": "2026-10-03",
+      "reviews": "91,523개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hx5XRpcPPU",
+      "image": "images/ep14-kimchi.jpg",
+      "date": "2026-10-03"
+    },
+    {
+      "ep": "EP13",
+      "name": "햇반 백미밥 210g x 12개 (CJ제일제당)",
+      "price": "13,640원",
+      "price_checked": "2026-10-03",
+      "reviews": "552,050개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hx5UlHIRJ6",
+      "image": "images/ep13-hatban.jpg",
+      "date": "2026-10-03"
+    },
+    {
+      "ep": "EP12",
+      "name": "비비고 왕교자 (냉동) 1.05kg x 5개",
+      "price": "46,010원",
+      "price_checked": "2026-10-03",
+      "reviews": "261,136개",
+      "rating": "미확인",
+      "url": "https://link.coupang.com/a/hxVAPIHrxY",
+      "image": "images/ep12-mandu.jpg",
+      "date": "2026-10-03",
+      "note": "제휴 링크 미발급 — 19:00 업로드 작업에서 쿠팡파트너스 링크 발급 후 url 교체 필요"
+    },
+    {
+      "date": "2026-10-03",
+      "ep": "EP11",
+      "image": "images/ep11-kitchentowel.jpg",
+      "name": "코멧 깨끗한 천연펄프 2겹 키친타올 150매 8롤",
+      "price": "6,860원",
+      "price_checked": "2026-10-03",
+      "rating": "5",
+      "reviews": "231,434개",
+      "url": "https://link.coupang.com/a/hxsdNlCNlk"
+    },
+    {
+      "date": "2026-10-03",
+      "ep": "EP10",
+      "image": "images/ep10-eggs.jpg",
+      "name": "곰곰 무항생제 신선한 특란 30구",
+      "price": "8,490원",
+      "price_checked": "2026-10-03",
+      "rating": "5",
+      "reviews": "391,439개",
+      "url": "https://link.coupang.com/a/hxqAtNzHSm"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP09",
+      "image": "images/ep09.jpg",
+      "name": "곰곰 노르웨이 간고등어살 1kg",
+      "price": "24,000원",
+      "price_checked": "2026-10-02",
+      "rating": "5",
+      "reviews": "102,912개",
+      "url": "https://link.coupang.com/a/huRphNOjIq"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP08",
+      "image": "images/ep08.jpg",
+      "name": "오뚜기 진라면 매운맛 120g × 10개",
+      "price": "7,130원",
+      "price_checked": "2026-10-02",
+      "rating": "5",
+      "reviews": "569,424개",
+      "url": "https://link.coupang.com/a/huRng6eeM8"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP07",
+      "image": "images/ep07.jpg",
+      "name": "곰곰 광천 도시락김 5g × 32개",
+      "price": "10,780원",
+      "price_checked": "2026-10-02",
+      "rating": "5",
+      "reviews": "288,483개",
+      "url": "https://link.coupang.com/a/huRsLMXCnY"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP06",
+      "image": "images/ep06.jpg",
+      "name": "곰곰 태추단감 1kg",
+      "price": "9,990원",
+      "price_checked": "2026-10-02",
+      "rating": "4.5",
+      "reviews": "195개",
+      "url": "https://link.coupang.com/a/hudlox3TiK"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP05",
+      "image": "images/ep05.jpg",
+      "name": "곰곰 홍로 햇사과 850g (4입)",
+      "price": "10,200원",
+      "price_checked": "2026-10-02",
+      "rating": "5",
+      "reviews": "2,772개",
+      "url": "https://link.coupang.com/a/hudgr45inI"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP04",
+      "image": "images/ep04.jpg",
+      "name": "귤탐 당도선별 감귤 2kg (로열과)",
+      "price": "20,900원",
+      "price_checked": "2026-10-02",
+      "rating": "5",
+      "reviews": "139,900개",
+      "url": "https://link.coupang.com/a/hudcqrak44"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP03",
+      "image": "images/ep03.jpg",
+      "name": "해남 달망 밤고구마 5kg (특상) 1박스",
+      "price": "15,990원",
+      "price_checked": "2026-10-02",
+      "rating": "4.5",
+      "reviews": "54,279개",
+      "url": "https://link.coupang.com/a/hsKafm30Oy"
+    },
+    {
+      "date": "2026-10-02",
+      "ep": "EP02",
+      "image": "images/ep02.jpg",
+      "name": "월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)",
+      "price": "15,800원",
+      "price_checked": "2026-10-02",
+      "rating": "5",
+      "reviews": "45,439개",
+      "url": "https://link.coupang.com/a/hrBfPBvPSm"
+    },
+    {
+      "ep": "EP36",
+      "product": "해태제과 홈런볼 초코 41g 4개",
+      "price": "4개 4,960원대 (변동 가능)",
+      "affiliate_link": null,
+      "coupang_url": "https://www.coupang.com/vp/products/6429441553",
+      "note": "제휴 링크 미발급 — 브라우저 발급 예정"
+    },
+    {
+      "ep": "EP35",
+      "product": "청정원 햇살담은 두번달여 더 진한 진간장 1.7L 2개",
+      "price": "2개 11,600원대 (변동 가능)",
+      "affiliate_link": null,
+      "coupang_url": "https://www.coupang.com/vp/products/6988712167?vendorItemId=86533286428",
+      "note": "제휴 링크 미발급 — 브라우저 발급 예정"
+    },
+    {
+      "ep": "EP34",
+      "product": "빙그레 바나나맛우유 240ml 24개",
+      "price": "미확인",
+      "affiliate_link": null,
+      "coupang_url": null,
+      "note": "제휴 링크 미발급 — 브라우저 발급 예정"
+    },
+    {
+      "ep": "EP49",
+      "date": "2026-10-17",
+      "name": "오리온 초코파이 정 12개입 (468g)",
+      "price": "8,200원 (변동 가능)",
+      "reviews": "150,473개",
+      "url": null,
+      "image": "images/ep49.jpg"
+    },
+    {
+      "ep": "EP50",
+      "date": "2026-10-17",
+      "name": "농심 새우깡 90g 20개",
+      "price": "16,310원 (변동 가능)",
+      "reviews": "8,729개",
+      "url": null,
+      "image": "images/ep50.jpg"
+    },
+    {
+      "ep": "EP51",
+      "date": "2026-10-17",
+      "name": "빙그레 메로나 멜론맛 (75ml × 20개)",
+      "price": "미확인",
+      "reviews": "미확인",
+      "url": null,
+      "image": "images/ep51.jpg"
+    }
+  ],
+  "updated": "2026-10-19"
 }
