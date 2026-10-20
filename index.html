@@ -14,7 +14,7 @@
   .wrap { max-width: 600px; margin: 0 auto; padding: 0 16px 48px; }
   header.top {
     background: #2e5d33; color: #fff; border-radius: 0 0 24px 24px;
-    padding: 28px 20px 24px; text-align: center; margin: 0 -16px 24px;
+    padding: 28px 20px 24px; text-align: center; margin: 0 -16px 20px;
   }
   .brand { font-size: 32px; font-weight: 800; margin: 0 0 6px; }
   .tagline { font-size: 21px; margin: 0 0 14px; }
@@ -24,7 +24,7 @@
   }
   .howto {
     background: #fff; border: 3px solid #2e5d33; border-radius: 20px;
-    padding: 20px; margin-bottom: 28px;
+    padding: 20px; margin-bottom: 24px;
   }
   .howto h2 { font-size: 26px; margin: 0 0 12px; text-align: center; }
   .howto ol { margin: 0; padding-left: 8px; list-style: none; }
@@ -34,25 +34,66 @@
     background: #2e5d33; color: #fff; font-size: 28px; font-weight: 800;
     display: inline-flex; align-items: center; justify-content: center;
   }
-  h2.list-title { font-size: 28px; text-align: center; margin: 8px 0 20px; }
-  .card {
-    background: #fff; border-radius: 24px; padding: 20px; margin-bottom: 28px;
-    box-shadow: 0 3px 14px rgba(0,0,0,.10); border: 1px solid #e8e2d5;
+  .toolbar {
+    position: sticky; top: 0; z-index: 10;
+    background: #f7f4ee; padding: 12px 0 10px; margin: 0 -4px;
   }
+  .search {
+    width: 100%; font-size: 22px; padding: 16px 20px;
+    border: 3px solid #2e5d33; border-radius: 999px; background: #fff;
+    outline: none; -webkit-appearance: none;
+  }
+  .search:focus { border-color: #1565c0; }
+  .chips {
+    display: flex; gap: 8px; overflow-x: auto; padding: 12px 2px 4px;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: 0 0 auto; font-size: 20px; font-weight: 700; cursor: pointer;
+    padding: 10px 20px; border-radius: 999px; border: 2px solid #2e5d33;
+    background: #fff; color: #2e5d33;
+  }
+  .chip.on { background: #2e5d33; color: #fff; }
+  .count { text-align: center; color: #666; font-size: 18px; margin: 6px 0 14px; }
+  .card {
+    background: #fff; border-radius: 24px; padding: 20px; margin-bottom: 24px;
+    box-shadow: 0 3px 14px rgba(0,0,0,.10); border: 1px solid #e8e2d5;
+    position: relative;
+  }
+  .badges { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .badge {
+    font-size: 16px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+  }
+  .badge.new { background: #e53935; color: #fff; }
+  .badge.cat { background: #ece7d9; color: #555; }
   .pimg {
     width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain;
     background: #fff; border: 1px solid #eee; border-radius: 16px; display: block;
   }
-  .card h3 { font-size: 27px; margin: 16px 0 8px; line-height: 1.4; }
+  .card h3 { font-size: 26px; margin: 14px 0 8px; line-height: 1.4; }
   .meta { font-size: 20px; color: #555; margin: 0 0 6px; }
-  .price { font-size: 30px; font-weight: 800; color: #b3261e; margin: 8px 0 18px; }
+  .price { font-size: 30px; font-weight: 800; color: #b3261e; margin: 8px 0 16px; }
   .pnote { display: block; font-size: 16px; font-weight: 400; color: #777; }
+  .btns { display: flex; flex-direction: column; gap: 10px; }
   .cta {
     display: block; text-align: center; text-decoration: none;
     background: #1565c0; color: #fff; font-size: 24px; font-weight: 800;
-    padding: 20px 16px; border-radius: 18px; min-height: 76px;
+    padding: 18px 16px; border-radius: 18px;
   }
   .cta:active { background: #0d47a1; }
+  .cta.off {
+    background: #e8e2d5; color: #888; pointer-events: none;
+  }
+  .video {
+    display: block; text-align: center; text-decoration: none;
+    background: #fff; color: #c62828; font-size: 21px; font-weight: 700;
+    padding: 14px 16px; border-radius: 18px; border: 2px solid #c62828;
+  }
+  .empty {
+    display: none; text-align: center; background: #fff; border-radius: 20px;
+    padding: 40px 20px; font-size: 22px; color: #555;
+  }
   footer { text-align: center; margin-top: 36px; }
   footer .disclosure { background: #ece7d9; color: #333; }
   .totop {
@@ -80,452 +121,745 @@
     </ol>
   </section>
 
-  <h2 class="list-title">🛒 추천 상품 목록</h2>
-  <main>
-  <article class="card">
+  <div class="toolbar">
+    <input class="search" id="q" type="search" placeholder="🔍 상품 이름으로 찾기 (예: 귤, 라면)" autocomplete="off">
+    <div class="chips" id="chips">
+      <button class="chip on" data-cat="전체">전체</button>
+      <button class="chip" data-cat="식품">식품</button>
+      <button class="chip" data-cat="간식">간식</button>
+      <button class="chip" data-cat="주방">주방</button>
+      <button class="chip" data-cat="생활">생활</button>
+      <button class="chip" data-cat="뷰티">뷰티</button>
+    </div>
+  </div>
+  <p class="count" id="count"></p>
+  <main id="list">
+  <article class="card" data-cat="주방" data-name="마치 자동개폐 유리 오일병 500ml 5개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">주방</span></div>
     <img class="pimg" src="images/ep61.jpg" alt="마치 자동개폐 유리 오일병 500ml 5개" loading="lazy">
     <h3>마치 자동개폐 유리 오일병 500ml 5개</h3>
     <p class="meta">상품평 1,076개</p>
     <p class="price">16,370원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="일편단심 해풍 태양초 고춧가루 1kg">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep62.jpg" alt="일편단심 해풍 태양초 고춧가루 1kg" loading="lazy">
     <h3>일편단심 해풍 태양초 고춧가루 1kg</h3>
     <p class="meta">상품평 20,296개</p>
     <p class="price">28,900원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="뷰티" data-name="아트릭스 스트롱 프로텍션 카모마일 핸드크림 250ml">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">뷰티</span></div>
     <img class="pimg" src="images/ep63.jpg" alt="아트릭스 스트롱 프로텍션 카모마일 핸드크림 250ml" loading="lazy">
     <h3>아트릭스 스트롱 프로텍션 카모마일 핸드크림 250ml</h3>
     <p class="meta">상품평 10,112개</p>
     <p class="price">6,280원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="뷰티" data-name="미쟝센 퍼펙트 오리지널 세럼 샴푸 900ml">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">뷰티</span></div>
     <img class="pimg" src="images/ep60.jpg" alt="미쟝센 퍼펙트 오리지널 세럼 샴푸 900ml" loading="lazy">
     <h3>미쟝센 퍼펙트 오리지널 세럼 샴푸 900ml</h3>
     <p class="meta">상품평 70,794개</p>
     <p class="price">5,700원 쿠폰가 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="귤담원 제주 제철 감귤 5kg 대과">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep59.jpg" alt="귤담원 제주 제철 감귤 5kg 대과" loading="lazy">
     <h3>귤담원 제주 제철 감귤 5kg 대과</h3>
     <p class="meta">상품평 83,768개</p>
     <p class="price">10,900원 쿠폰가 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hZHYkycQP6">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hZHYkycQP6">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="주방" data-name="한솔템 스테인리스 완벽 물빠짐 수세미 거치대">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">주방</span></div>
     <img class="pimg" src="images/ep58.jpg" alt="한솔템 스테인리스 완벽 물빠짐 수세미 거치대" loading="lazy">
     <h3>한솔템 스테인리스 완벽 물빠짐 수세미 거치대</h3>
     <p class="meta">상품평 1,632개</p>
     <p class="price">7,800원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hZmVx61nG0">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hZmVx61nG0">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="생활" data-name="크리넥스 울트라클린 천연펄프 3겹 고급롤화장지 (27m, 30롤)">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">생활</span></div>
     <img class="pimg" src="images/ep57.jpg" alt="크리넥스 울트라클린 천연펄프 3겹 고급롤화장지 (27m, 30롤)" loading="lazy">
     <h3>크리넥스 울트라클린 천연펄프 3겹 고급롤화장지 (27m, 30롤)</h3>
     <p class="meta">상품평 98,885개</p>
     <p class="price">19,140원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hYsTvMzipg">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hYsTvMzipg">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="삼립 발효미종 정통단팥 호빵 (380g, 4개입)">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep56.jpg" alt="삼립 발효미종 정통단팥 호빵 (380g, 4개입)" loading="lazy">
     <h3>삼립 발효미종 정통단팥 호빵 (380g, 4개입)</h3>
     <p class="meta">상품평 12,957개</p>
     <p class="price">와우할인가 5,200원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hX21MpAWcK">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hX21MpAWcK">쿠팡에서 상품 보기</a>
+      <a class="video" href="https://www.youtube.com/shorts/PL9-vatkW7w">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="주방" data-name="마켓플랜 실리콘 만능 뚜껑 세트 (원형)">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">주방</span></div>
     <img class="pimg" src="images/ep55.jpg" alt="마켓플랜 실리콘 만능 뚜껑 세트 (원형)" loading="lazy">
     <h3>마켓플랜 실리콘 만능 뚜껑 세트 (원형)</h3>
     <p class="meta">상품평 5,028개</p>
     <p class="price">4,500원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/Bik3jx1skys">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="롯데 꼬깔콘 고소한맛 67g 12개입">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep54.jpg" alt="롯데 꼬깔콘 고소한맛 67g 12개입" loading="lazy">
     <h3>롯데 꼬깔콘 고소한맛 67g 12개입</h3>
     <p class="meta">상품평 7,770개</p>
     <p class="price">12,410원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/yPbJ4qcKfms">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="농심 양파링 오리지널 80g 16개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep53.jpg" alt="농심 양파링 오리지널 80g 16개" loading="lazy">
     <h3>농심 양파링 오리지널 80g 16개</h3>
     <p class="meta">상품평 27,018개</p>
     <p class="price">19,100원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/cxidpVd8TrU">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="롯데 빼빼로 오리지널 54g 10개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep52.jpg" alt="롯데 빼빼로 오리지널 54g 10개" loading="lazy">
     <h3>롯데 빼빼로 오리지널 54g 10개</h3>
     <p class="meta">상품평 28,018개</p>
     <p class="price">12,150원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hV2KmYk6SG">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hV2KmYk6SG">쿠팡에서 상품 보기</a>
+      <a class="video" href="https://www.youtube.com/shorts/pPY3n7iT3GQ">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="해태 부라보콘 바닐라 160ml 24개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep48.jpg" alt="해태 부라보콘 바닐라 160ml 24개" loading="lazy">
     <h3>해태 부라보콘 바닐라 160ml 24개</h3>
     <p class="meta">상품평 717개</p>
     <p class="price">27,490원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/2kpRr5nrM-A">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="닥터유 다이제 초코 225g 5개 (오리온)">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep47.jpg" alt="닥터유 다이제 초코 225g 5개 (오리온)" loading="lazy">
     <h3>닥터유 다이제 초코 225g 5개 (오리온)</h3>
     <p class="meta">상품평 20,117개</p>
     <p class="price">10,350원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="농심 너구리 얼큰한 맛 120g 20개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep46.jpg" alt="농심 너구리 얼큰한 맛 120g 20개" loading="lazy">
     <h3>농심 너구리 얼큰한 맛 120g 20개</h3>
     <p class="meta">상품평 미확인 (한 달간 800명 이상 구매)</p>
     <p class="price">15,910원 (쿠폰 적용가·변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/Prja03e4aOs">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="농심 바나나킥 75g 10개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep45.jpg" alt="농심 바나나킥 75g 10개" loading="lazy">
     <h3>농심 바나나킥 75g 10개</h3>
     <p class="meta">상품평 20,947개</p>
     <p class="price">11,870원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="롯데 카스타드 오리지널 230g 3개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep44.jpg" alt="롯데 카스타드 오리지널 230g 3개" loading="lazy">
     <h3>롯데 카스타드 오리지널 230g 3개</h3>
     <p class="meta">상품평 66,254개</p>
     <p class="price">11,700원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/lt8oiVZQvMs">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="롯데 칠성사이다 350ml 24개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep43.jpg" alt="롯데 칠성사이다 350ml 24개" loading="lazy">
     <h3>롯데 칠성사이다 350ml 24개</h3>
     <p class="meta">상품평 350,300개</p>
     <p class="price">17,540원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/CyrHZH7cTbo">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="CJ제일제당 햇반 백미 210g" loading="lazy">
+  <article class="card" data-cat="식품" data-name="cj제일제당 햇반 백미 210g">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">식품</span></div>
+    
     <h3>CJ제일제당 햇반 백미 210g</h3>
     <p class="meta">상품평 미확인</p>
     <p class="price">16개입 19,200원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/3pxqMb5grK4">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="오리온 고래밥 볶음양념맛 20g 10개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep41.jpg" alt="오리온 고래밥 볶음양념맛 20g 10개" loading="lazy">
     <h3>오리온 고래밥 볶음양념맛 20g 10개</h3>
     <p class="meta">상품평 미확인</p>
     <p class="price">3,770원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/KuDiGHtT9fY">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="농심 신라면 120g">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep40.jpg" alt="농심 신라면 120g" loading="lazy">
     <h3>농심 신라면 120g</h3>
     <p class="meta">상품평 77,962개</p>
     <p class="price">5개 4,150원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="해태제과 맛동산 70g 4개" loading="lazy">
+  <article class="card" data-cat="간식" data-name="해태제과 맛동산 70g 4개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
+    
     <h3>해태제과 맛동산 70g 4개</h3>
     <p class="meta">상품평 116,856개</p>
     <p class="price">4,000원대 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="삼양라면 120g 10개" loading="lazy">
+  <article class="card" data-cat="식품" data-name="삼양라면 120g 10개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">식품</span></div>
+    
     <h3>삼양라면 120g 10개</h3>
     <p class="meta">상품평 215,066개</p>
     <p class="price">5,040원 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="동서 맥심 모카골드 마일드 커피믹스 12g 160개입" loading="lazy">
+  <article class="card" data-cat="간식" data-name="동서 맥심 모카골드 마일드 커피믹스 12g 160개입">
+    <div class="badges"><span class="badge cat">간식</span></div>
+    
     <h3>동서 맥심 모카골드 마일드 커피믹스 12g 160개입</h3>
     <p class="meta">상품평 787,996개</p>
     <p class="price">24,400원 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="농심 육개장 사발면 86g">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep33.jpg" alt="농심 육개장 사발면 86g" loading="lazy">
     <h3>농심 육개장 사발면 86g</h3>
     <p class="meta">상품평 550,473개</p>
     <p class="price">86g 6개 5,670원 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hIVQ5ZIiqa">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hIVQ5ZIiqa">쿠팡에서 상품 보기</a>
+      <a class="video" href="https://www.youtube.com/shorts/cL__W3DEFjY">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="팔도 비빔면 130g, 10개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep32.jpg" alt="팔도 비빔면 130g, 10개" loading="lazy">
     <h3>팔도 비빔면 130g, 10개</h3>
     <p class="meta">상품평 173,880개</p>
     <p class="price">10개 8,000원 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hIVP0dexjM">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hIVP0dexjM">쿠팡에서 상품 보기</a>
+      <a class="video" href="https://www.youtube.com/shorts/4vXF3OgmpwA">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="농심 새우깡">
+    <div class="badges"><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep31.jpg" alt="농심 새우깡" loading="lazy">
     <h3>농심 새우깡</h3>
     <p class="meta">상품평 114,014개</p>
     <p class="price">4,560원 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hIVO0ylnR6">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hIVO0ylnR6">쿠팡에서 상품 보기</a>
+      <a class="video" href="https://www.youtube.com/shorts/WkHliDTV_Lk">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="광동 v라인 옥수수수염차, 500ml">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep30.jpg" alt="광동 V라인 옥수수수염차, 500ml" loading="lazy">
     <h3>광동 V라인 옥수수수염차, 500ml</h3>
     <p class="meta">상품평 미확인</p>
     <p class="price">미확인 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hG7S8zxNcq">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hG7S8zxNcq">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="오리온 초코파이 (다이소 근본이즘 한정판)">
+    <div class="badges"><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep29-chocopie.jpg" alt="오리온 초코파이 (다이소 근본이즘 한정판)" loading="lazy">
     <h3>오리온 초코파이 (다이소 근본이즘 한정판)</h3>
     <p class="meta">상품평 미확인</p>
     <p class="price">미확인 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hG7QCaqlUjA">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hG7QCaqlUjA">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="해태 에이스 (다이소 근본이즘 한정판)">
+    <div class="badges"><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep28-ace.jpg" alt="해태 에이스 (다이소 근본이즘 한정판)" loading="lazy">
     <h3>해태 에이스 (다이소 근본이즘 한정판)</h3>
     <p class="meta">상품평 미확인</p>
     <p class="price">미확인 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hG7lEHfGwe">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hG7lEHfGwe">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="스미후루 필리핀산 감숙왕 바나나, 1kg 내외">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep26-banana.jpg" alt="스미후루 필리핀산 감숙왕 바나나, 1kg 내외" loading="lazy">
     <h3>스미후루 필리핀산 감숙왕 바나나, 1kg 내외</h3>
     <p class="meta">상품평 259,942개 · 별점 미확인</p>
     <p class="price">3,770원 <span class="pnote">(2026-10-07 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hFsmh13Qtg">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hFsmh13Qtg">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="사조 해표 콩기름 식용유, 900ml, 2개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep25-haepyo-oil.jpg" alt="사조 해표 콩기름 식용유, 900ml, 2개" loading="lazy">
     <h3>사조 해표 콩기름 식용유, 900ml, 2개</h3>
     <p class="meta">상품평 404,328개 · 별점 미확인</p>
     <p class="price">7,880원 <span class="pnote">(2026-10-07 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hFskCMeHUy">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hFskCMeHUy">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="생활" data-name="탐사 파워워시 액체세제 본품, 2.5l, 4개">
+    <div class="badges"><span class="badge cat">생활</span></div>
     <img class="pimg" src="images/ep27.jpg" alt="탐사 파워워시 액체세제 본품, 2.5L, 4개" loading="lazy">
     <h3>탐사 파워워시 액체세제 본품, 2.5L, 4개</h3>
     <p class="meta">상품평 259,259개 · 별점 미확인</p>
     <p class="price">10,990원 <span class="pnote">(2026-10-07 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hFsjnL7hds">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hFsjnL7hds">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="청정원순창 현미 태양초 찰고추장, 3kg">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep24-gochujang.jpg" alt="청정원순창 현미 태양초 찰고추장, 3kg" loading="lazy">
     <h3>청정원순창 현미 태양초 찰고추장, 3kg</h3>
     <p class="meta">상품평 197,706개 · 별점 미확인</p>
     <p class="price">10,450원 <span class="pnote">(2026-10-06 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hDOogHKbAa">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hDOogHKbAa">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="생활" data-name="탐사 클래식 물티슈 캡형, 100매, 10개">
+    <div class="badges"><span class="badge cat">생활</span></div>
     <img class="pimg" src="images/ep23-wetwipes.jpg" alt="탐사 클래식 물티슈 캡형, 100매, 10개" loading="lazy">
     <h3>탐사 클래식 물티슈 캡형, 100매, 10개</h3>
     <p class="meta">상품평 31만개 이상 · 별점 4.6</p>
     <p class="price">약 7,890원 <span class="pnote">(2026-10-06 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hDOiSB9GMe">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hDOiSB9GMe">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="동원참치 라이트 스탠다드, 250g, 10개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep22-chamchi.jpg" alt="동원참치 라이트 스탠다드, 250g, 10개" loading="lazy">
     <h3>동원참치 라이트 스탠다드, 250g, 10개</h3>
     <p class="meta">상품평 133,763개 · 별점 미확인</p>
     <p class="price">31,190원 <span class="pnote">(2026-10-06 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hDNTpwLF7I">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hDNTpwLF7I">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="곰곰 2026년산 햅쌀 소중한 우리쌀 상등급 - 백미">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep21-rice.jpg" alt="곰곰 2026년산 햅쌀 소중한 우리쌀 상등급 - 백미" loading="lazy">
     <h3>곰곰 2026년산 햅쌀 소중한 우리쌀 상등급 - 백미</h3>
     <p class="meta">상품평 632,247개 · 별점 4.7</p>
     <p class="price">17,390~24,500원 <span class="pnote">(2026-10-05 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hBARQS13Js">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hBARQS13Js">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="생활" data-name="코멧 순백 3겹 라벤더 바닐라 롤화장지, 30m">
+    <div class="badges"><span class="badge cat">생활</span></div>
     <img class="pimg" src="images/ep20-toiletpaper.jpg" alt="코멧 순백 3겹 라벤더 바닐라 롤화장지, 30m" loading="lazy">
     <h3>코멧 순백 3겹 라벤더 바닐라 롤화장지, 30m</h3>
     <p class="meta">상품평 923,888개 · 별점 4.7</p>
     <p class="price">11,990~19,900원 <span class="pnote">(2026-10-05 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hBAox7rdHU">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hBAox7rdHU">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="비비고 사골곰탕, 500g, 5개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep19-sagolgomtang.jpg" alt="비비고 사골곰탕, 500g, 5개" loading="lazy">
     <h3>비비고 사골곰탕, 500g, 5개</h3>
     <p class="meta">상품평 187,080개 · 별점 4.8</p>
     <p class="price">5,450~8,400원 <span class="pnote">(2026-10-05 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hBzVNCn2M8">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hBzVNCn2M8">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="제주삼다수 그린 무라벨 2l x 6개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep18-samdasu.jpg" alt="제주삼다수 그린 무라벨 2L x 6개" loading="lazy">
     <h3>제주삼다수 그린 무라벨 2L x 6개</h3>
     <p class="meta">상품평 1,056,903개 · 별점 5</p>
     <p class="price">6,340원 <span class="pnote">(2026-10-04 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hzSJaXVfcy">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hzSJaXVfcy">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="서울우유 멸균 흰우유, 200ml, 24개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep17-milk.jpg" alt="서울우유 멸균 흰우유, 200ml, 24개" loading="lazy">
     <h3>서울우유 멸균 흰우유, 200ml, 24개</h3>
     <p class="meta">상품평 567,333개 · 별점 5</p>
     <p class="price">14,900원 <span class="pnote">(2026-10-04 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hzSyKd1LIO">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hzSyKd1LIO">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="풀무원 특등급 국산콩 두부 부침찌개 겸용, 300g, 2개입">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep16-dubu.jpg" alt="풀무원 특등급 국산콩 두부 부침찌개 겸용, 300g, 2개입" loading="lazy">
     <h3>풀무원 특등급 국산콩 두부 부침찌개 겸용, 300g, 2개입</h3>
     <p class="meta">상품평 251,003개 · 별점 5</p>
     <p class="price">4,980원 <span class="pnote">(2026-10-04 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hzSwPNNtT2">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hzSwPNNtT2">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="스팸 클래식 200g x 9개 (cj제일제당)">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep15-spam.jpg" alt="스팸 클래식 200g x 9개 (CJ제일제당)" loading="lazy">
     <h3>스팸 클래식 200g x 9개 (CJ제일제당)</h3>
     <p class="meta">상품평 151,105개 · 별점 미확인</p>
     <p class="price">24,900원 <span class="pnote">(2026-10-03 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hx5083Xm1s">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hx5083Xm1s">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="종가 포기김치 4kg (대상)">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep14-kimchi.jpg" alt="종가 포기김치 4kg (대상)" loading="lazy">
     <h3>종가 포기김치 4kg (대상)</h3>
     <p class="meta">상품평 91,523개 · 별점 미확인</p>
     <p class="price">36,180원 <span class="pnote">(2026-10-03 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hx5XRpcPPU">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hx5XRpcPPU">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="햇반 백미밥 210g x 12개 (cj제일제당)">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep13-hatban.jpg" alt="햇반 백미밥 210g x 12개 (CJ제일제당)" loading="lazy">
     <h3>햇반 백미밥 210g x 12개 (CJ제일제당)</h3>
     <p class="meta">상품평 552,050개 · 별점 미확인</p>
     <p class="price">13,640원 <span class="pnote">(2026-10-03 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hx5UlHIRJ6">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hx5UlHIRJ6">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="비비고 왕교자 (냉동) 1.05kg x 5개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep12-mandu.jpg" alt="비비고 왕교자 (냉동) 1.05kg x 5개" loading="lazy">
     <h3>비비고 왕교자 (냉동) 1.05kg x 5개</h3>
     <p class="meta">상품평 261,136개 · 별점 미확인</p>
     <p class="price">46,010원 <span class="pnote">(2026-10-03 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hxVAPIHrxY">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hxVAPIHrxY">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="주방" data-name="코멧 깨끗한 천연펄프 2겹 키친타올 150매 8롤">
+    <div class="badges"><span class="badge cat">주방</span></div>
     <img class="pimg" src="images/ep11-kitchentowel.jpg" alt="코멧 깨끗한 천연펄프 2겹 키친타올 150매 8롤" loading="lazy">
     <h3>코멧 깨끗한 천연펄프 2겹 키친타올 150매 8롤</h3>
     <p class="meta">상품평 231,434개 · 별점 5</p>
     <p class="price">6,860원 <span class="pnote">(2026-10-03 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hxsdNlCNlk">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hxsdNlCNlk">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="곰곰 무항생제 신선한 특란 30구">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep10-eggs.jpg" alt="곰곰 무항생제 신선한 특란 30구" loading="lazy">
     <h3>곰곰 무항생제 신선한 특란 30구</h3>
     <p class="meta">상품평 391,439개 · 별점 5</p>
     <p class="price">8,490원 <span class="pnote">(2026-10-03 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hxqAtNzHSm">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hxqAtNzHSm">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="곰곰 노르웨이 간고등어살 1kg">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep09.jpg" alt="곰곰 노르웨이 간고등어살 1kg" loading="lazy">
     <h3>곰곰 노르웨이 간고등어살 1kg</h3>
     <p class="meta">상품평 102,912개 · 별점 5</p>
     <p class="price">24,000원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/huRphNOjIq">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/huRphNOjIq">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="오뚜기 진라면 매운맛 120g × 10개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep08.jpg" alt="오뚜기 진라면 매운맛 120g × 10개" loading="lazy">
     <h3>오뚜기 진라면 매운맛 120g × 10개</h3>
     <p class="meta">상품평 569,424개 · 별점 5</p>
     <p class="price">7,130원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/huRng6eeM8">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/huRng6eeM8">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="곰곰 광천 도시락김 5g × 32개">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep07.jpg" alt="곰곰 광천 도시락김 5g × 32개" loading="lazy">
     <h3>곰곰 광천 도시락김 5g × 32개</h3>
     <p class="meta">상품평 288,483개 · 별점 5</p>
     <p class="price">10,780원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/huRsLMXCnY">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/huRsLMXCnY">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="곰곰 태추단감 1kg">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep06.jpg" alt="곰곰 태추단감 1kg" loading="lazy">
     <h3>곰곰 태추단감 1kg</h3>
     <p class="meta">상품평 195개 · 별점 4.5</p>
     <p class="price">9,990원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hudlox3TiK">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hudlox3TiK">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="곰곰 홍로 햇사과 850g (4입)">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep05.jpg" alt="곰곰 홍로 햇사과 850g (4입)" loading="lazy">
     <h3>곰곰 홍로 햇사과 850g (4입)</h3>
     <p class="meta">상품평 2,772개 · 별점 5</p>
     <p class="price">10,200원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hudgr45inI">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hudgr45inI">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="귤탐 당도선별 감귤 2kg (로열과)">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep04.jpg" alt="귤탐 당도선별 감귤 2kg (로열과)" loading="lazy">
     <h3>귤탐 당도선별 감귤 2kg (로열과)</h3>
     <p class="meta">상품평 139,900개 · 별점 5</p>
     <p class="price">20,900원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hudcqrak44">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hudcqrak44">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="식품" data-name="해남 달망 밤고구마 5kg (특상) 1박스">
+    <div class="badges"><span class="badge cat">식품</span></div>
     <img class="pimg" src="images/ep03.jpg" alt="해남 달망 밤고구마 5kg (특상) 1박스" loading="lazy">
     <h3>해남 달망 밤고구마 5kg (특상) 1박스</h3>
     <p class="meta">상품평 54,279개 · 별점 4.5</p>
     <p class="price">15,990원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hsKafm30Oy">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hsKafm30Oy">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="생활" data-name="월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)">
+    <div class="badges"><span class="badge cat">생활</span></div>
     <img class="pimg" src="images/ep02.jpg" alt="월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)" loading="lazy">
     <h3>월광 미끄럼방지 욕실매트 튜브형 (회색, 100×60cm)</h3>
     <p class="meta">상품평 45,439개 · 별점 5</p>
     <p class="price">15,800원 <span class="pnote">(2026-10-02 확인 · 가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="https://link.coupang.com/a/hrBfPBvPSm">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <a class="cta" href="https://link.coupang.com/a/hrBfPBvPSm">쿠팡에서 상품 보기</a>
+      
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="상품" loading="lazy">
-    <h3>상품</h3>
+  <article class="card" data-cat="간식" data-name="해태제과 홈런볼 초코 41g 4개">
+    <div class="badges"><span class="badge cat">간식</span></div>
+    
+    <h3>해태제과 홈런볼 초코 41g 4개</h3>
     <p class="meta">쿠팡에서 자세한 정보를 확인하세요</p>
     <p class="price">4개 4,960원대 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="#">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="상품" loading="lazy">
-    <h3>상품</h3>
+  <article class="card" data-cat="식품" data-name="청정원 햇살담은 두번달여 더 진한 진간장 1.7l 2개">
+    <div class="badges"><span class="badge cat">식품</span></div>
+    
+    <h3>청정원 햇살담은 두번달여 더 진한 진간장 1.7L 2개</h3>
     <p class="meta">쿠팡에서 자세한 정보를 확인하세요</p>
     <p class="price">2개 11,600원대 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="#">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/ACLZ-Apa__M">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
-    <img class="pimg" src="" alt="상품" loading="lazy">
-    <h3>상품</h3>
+  <article class="card" data-cat="식품" data-name="빙그레 바나나맛우유 240ml 24개">
+    <div class="badges"><span class="badge cat">식품</span></div>
+    
+    <h3>빙그레 바나나맛우유 240ml 24개</h3>
     <p class="meta">쿠팡에서 자세한 정보를 확인하세요</p>
     <p class="price">미확인 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="#">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="오리온 초코파이 정 12개입 (468g)">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep49.jpg" alt="오리온 초코파이 정 12개입 (468g)" loading="lazy">
     <h3>오리온 초코파이 정 12개입 (468g)</h3>
     <p class="meta">상품평 150,473개</p>
     <p class="price">8,200원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="농심 새우깡 90g 20개">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep50.jpg" alt="농심 새우깡 90g 20개" loading="lazy">
     <h3>농심 새우깡 90g 20개</h3>
     <p class="meta">상품평 8,729개</p>
     <p class="price">16,310원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      <a class="video" href="https://www.youtube.com/shorts/A-W0P_jyXMU">▶ 영상으로 보기</a>
+    </div>
   </article>
-  <article class="card">
+  <article class="card" data-cat="간식" data-name="빙그레 메로나 멜론맛 (75ml × 20개)">
+    <div class="badges"><span class="badge new">NEW</span><span class="badge cat">간식</span></div>
     <img class="pimg" src="images/ep51.jpg" alt="빙그레 메로나 멜론맛 (75ml × 20개)" loading="lazy">
     <h3>빙그레 메로나 멜론맛 (75ml × 20개)</h3>
     <p class="meta">상품평 미확인</p>
     <p class="price">미확인 <span class="pnote">(가격은 변동될 수 있어요)</span></p>
-    <a class="cta" href="">쿠팡에서 상품 보기</a>
+    <div class="btns">
+      <span class="cta off">쿠팡 링크 준비 중</span>
+      
+    </div>
   </article>
   </main>
+  <div class="empty" id="empty">찾으시는 상품이 없어요 😢<br>다른 이름으로 검색해 보세요.</div>
 
   <footer>
     <p class="disclosure">이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)</p>
     <br>
     <a class="totop" href="#top">맨 위로 올라가기 ↑</a>
-    <p class="updated">마지막 업데이트: 2026-10-19</p>
+    <p class="updated">마지막 업데이트: 2026-10-20</p>
   </footer>
 
 </div>
+<script>
+(function () {
+  var q = document.getElementById('q');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  var cat = '전체';
+  function apply() {
+    var term = q.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (c) {
+      var okCat = (cat === '전체' || c.dataset.cat === cat);
+      var okTerm = (!term || c.dataset.name.indexOf(term) !== -1);
+      var show = okCat && okTerm;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    count.textContent = '총 ' + shown + '개 상품';
+    empty.style.display = shown ? 'none' : 'block';
+  }
+  q.addEventListener('input', apply);
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('on'); });
+      chip.classList.add('on');
+      cat = chip.dataset.cat;
+      apply();
+    });
+  });
+  apply();
+})();
+</script>
 <!-- Cloudflare Web Analytics (방문자 통계, 2026-10-03 추가) -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js'
   data-cf-beacon='{"token": "954984c2c2444153b49c68c9112377fd"}'></script>
