@@ -268,6 +268,7 @@
       <button class="chip" data-cat="주방">주방</button>
       <button class="chip" data-cat="생활">생활</button>
       <button class="chip" data-cat="뷰티">뷰티</button>
+      <button class="chip" data-cat="기타">기타</button>
     </div>
     <div class="row2">
       <select class="sortsel" id="sort">
@@ -285,6 +286,39 @@
   </div>
   <p class="count" id="count"></p>
   <main id="list">
+  <article class="card" data-cat="주방" data-name="인콕 실리콘 에어프라이어팟, 올리브그린, 1개" data-reviews="1703" data-price="13630" data-date="2026-10-22" data-aos="fade-up">
+    <div class="badges"><span class="badge new animate__animated animate__pulse animate__infinite">NEW</span><span class="badge cat">주방</span></div>
+    <button class="imgbtn" data-qv aria-label="인콕 실리콘 에어프라이어팟, 올리브그린, 1개 자세히 보기"><img class="pimg lazyload" data-src="images/ep64.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="인콕 실리콘 에어프라이어팟, 올리브그린, 1개"></button>
+    <h3>인콕 실리콘 에어프라이어팟, 올리브그린, 1개</h3>
+    <p class="meta">상품평 1,703개</p>
+    <p class="price">13,630원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
+    <div class="btns">
+      <a class="cta hvr-grow" href="https://www.coupang.com/vp/products/5619841346?vendorItemId=76392727193"><i class="fa-solid fa-cart-shopping"></i> 쿠팡에서 상품 보기</a>
+      
+    </div>
+  </article>
+  <article class="card" data-cat="기타" data-name="타이드 투고 휴대용 얼룩제거 펜, 10ml, 3개" data-reviews="1738" data-price="19900" data-date="2026-10-22" data-aos="fade-up">
+    <div class="badges"><span class="badge new animate__animated animate__pulse animate__infinite">NEW</span><span class="badge cat">기타</span></div>
+    <button class="imgbtn" data-qv aria-label="타이드 투고 휴대용 얼룩제거 펜, 10ml, 3개 자세히 보기"><img class="pimg lazyload" data-src="images/ep65.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="타이드 투고 휴대용 얼룩제거 펜, 10ml, 3개"></button>
+    <h3>타이드 투고 휴대용 얼룩제거 펜, 10ml, 3개</h3>
+    <p class="meta">상품평 1,738개</p>
+    <p class="price">19,900원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
+    <div class="btns">
+      <a class="cta hvr-grow" href="https://www.coupang.com/vp/products/6374344557"><i class="fa-solid fa-cart-shopping"></i> 쿠팡에서 상품 보기</a>
+      
+    </div>
+  </article>
+  <article class="card" data-cat="식품" data-name="국내산 햇 꿀고구마, 1.5kg, 1박스" data-reviews="233911" data-price="8100" data-date="2026-10-22" data-aos="fade-up">
+    <div class="badges"><span class="badge new animate__animated animate__pulse animate__infinite">NEW</span><span class="badge cat">식품</span></div>
+    <button class="imgbtn" data-qv aria-label="국내산 햇 꿀고구마, 1.5kg, 1박스 자세히 보기"><img class="pimg lazyload" data-src="images/ep66.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="국내산 햇 꿀고구마, 1.5kg, 1박스"></button>
+    <h3>국내산 햇 꿀고구마, 1.5kg, 1박스</h3>
+    <p class="meta">상품평 23.4만 개</p>
+    <p class="price">8,100원 (변동 가능) <span class="pnote">(가격은 변동될 수 있어요)</span></p>
+    <div class="btns">
+      <a class="cta hvr-grow" href="https://www.coupang.com/vp/products/6006314977"><i class="fa-solid fa-cart-shopping"></i> 쿠팡에서 상품 보기</a>
+      
+    </div>
+  </article>
   <article class="card" data-cat="주방" data-name="마치 자동개폐 유리 오일병 500ml 5개" data-reviews="1076" data-price="16370" data-date="2026-10-21" data-aos="fade-up">
     <div class="badges"><span class="badge new animate__animated animate__pulse animate__infinite">NEW</span><span class="badge cat">주방</span></div>
     <button class="imgbtn" data-qv aria-label="마치 자동개폐 유리 오일병 500ml 5개 자세히 보기"><img class="pimg lazyload" data-src="images/ep61.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="마치 자동개폐 유리 오일병 500ml 5개"></button>
@@ -1138,8 +1172,8 @@ function countUp(id, target) {
     onUpdate: function () { el.textContent = Math.round(obj.v).toLocaleString(); }
   });
 }
-countUp("stat-products", 62);
-countUp("stat-reviews", 11087481);
+countUp("stat-products", 65);
+countUp("stat-reviews", 11324833);
 gsap.to(".basket", { y: -8, duration: 0.9, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
 apply();
