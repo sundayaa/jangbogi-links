@@ -3,6 +3,15 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP65",
+      "name": "타이드 투고 휴대용 얼룩제거 펜, 10ml, 3개",
+      "price": "12,800원 (변동 가능)",
+      "reviews": "상품평 1,738개 · 평점 4.5",
+      "image": "images/ep65.jpg",
+      "url": "https://link.coupang.com/a/h21H1SQMlU",
+      "date": "2026-10-22"
+    },
+    {
       "ep": "EP67",
       "name": "해남 땅끝산들 절임배추, 20kg",
       "price": "39,900원 (변동 가능)",
@@ -36,15 +45,6 @@
       "reviews": "1,703개",
       "image": "images/ep64.jpg",
       "url": "https://link.coupang.com/a/h2IqVnj8AC",
-      "date": "2026-10-22"
-    },
-    {
-      "ep": "EP65",
-      "name": "타이드 투고 휴대용 얼룩제거 펜, 10ml, 3개",
-      "price": "19,900원 (변동 가능)",
-      "reviews": "1,738개",
-      "image": "images/ep65.jpg",
-      "url": "https://www.coupang.com/vp/products/6374344557",
       "date": "2026-10-22"
     },
     {
@@ -673,5 +673,5 @@
       "image": "images/ep51.jpg"
     }
   ],
-  "updated": "2026-10-21"
+  "updated": "2026-10-22"
 }
