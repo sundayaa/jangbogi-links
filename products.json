@@ -3,6 +3,33 @@
  "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
  "products": [
   {
+   "ep": "EP73",
+   "name": "듀플렉스 간편 통세척 투명 대용량 초음파 가습기 4L",
+   "price": "42,800원 (변동 가능)",
+   "reviews": "상품평 131개 · 평점 4.6",
+   "image": "images/ep73.jpg",
+   "url": "https://www.coupang.com/vp/products/309683203",
+   "date": "2026-10-23"
+  },
+  {
+   "ep": "EP74",
+   "name": "로이홈 마늘 채칼 슬라이스 다지기, 그린, 1개",
+   "price": "5,250원 (변동 가능)",
+   "reviews": "상품평 209개 · 평점 4.7",
+   "image": "images/ep74.jpg",
+   "url": "https://www.coupang.com/vp/products/8837148911",
+   "date": "2026-10-23"
+  },
+  {
+   "ep": "EP75",
+   "name": "곰곰 부여 햇 알밤, 1kg, 1팩",
+   "price": "9,500원 (변동 가능)",
+   "reviews": "상품평 12,115개 · 평점 4.4",
+   "image": "images/ep75.jpg",
+   "url": "https://www.coupang.com/vp/products/6184258656",
+   "date": "2026-10-23"
+  },
+  {
    "ep": "EP72",
    "name": "히즈엔 무선 충전식 동작 감지 센서등 자동인식 LED 붙이는 조명, 웜옐로우, 1개",
    "price": "8,700원 (변동 가능)",
