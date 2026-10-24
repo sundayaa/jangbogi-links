@@ -3,6 +3,33 @@
  "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
  "products": [
   {
+   "ep": "EP78",
+   "name": "에코와이드 끼우는 문풍지 창문 틈새막이 외풍 창틀 바람막이 M, 4개",
+   "price": "14,600원 (변동 가능)",
+   "reviews": "상품평 1,415개 · 평점 4.6",
+   "image": "images/ep78.jpg",
+   "url": "https://www.coupang.com/vp/products/8416474413",
+   "date": "2026-10-24"
+  },
+  {
+   "ep": "EP77",
+   "name": "곰곰 (햇) 당도선별 세척사과, 214g(중과), 5개",
+   "price": "10,600원 (변동 가능)",
+   "reviews": "상품평 11,558개 · 평점 4.5",
+   "image": "images/ep77.jpg",
+   "url": "https://www.coupang.com/vp/products/7665369971",
+   "date": "2026-10-24"
+  },
+  {
+   "ep": "EP76",
+   "name": "위더스욕실용품 알루미늄 무타공 일자 욕실선반 2p 세트, 블랙, 1세트",
+   "price": "8,900원 (변동 가능)",
+   "reviews": "상품평 6,313개 · 평점 4.6",
+   "image": "images/ep76.jpg",
+   "url": "https://www.coupang.com/vp/products/8005938934",
+   "date": "2026-10-24"
+  },
+  {
    "ep": "EP73",
    "name": "듀플렉스 간편 통세척 투명 대용량 초음파 가습기 4L",
    "price": "42,800원 (변동 가능)",
@@ -727,5 +754,5 @@
    "image": "images/ep51.jpg"
   }
  ],
- "updated": "2026-10-22"
+ "updated": "2026-10-24"
 }
