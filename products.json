@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP87",
+      "name": "락앤락 데일리 슬림핏 원터치 텀블러, 아이보리, 400ml, 1개",
+      "price": "13,140원 (변동 가능)",
+      "reviews": "상품평 16,951개 · 평점 4.8",
+      "image": "images/ep87.jpg",
+      "url": "https://www.coupang.com/vp/products/7704497949?vendorItemId=20636825317",
+      "date": "2026-10-27"
+    },
+    {
+      "ep": "EP86",
+      "name": "광천김 참 재래도시락 김, 5g, 32개",
+      "price": "10,790원 (변동 가능)",
+      "reviews": "상품평 150,928개 · 평점 4.7",
+      "image": "images/ep86.jpg",
+      "url": "https://www.coupang.com/vp/products/1792705091?vendorItemId=78442846921",
+      "date": "2026-10-27"
+    },
+    {
+      "ep": "EP85",
+      "name": "해피제이 만능 뚜껑 오프너",
+      "price": "3,000원 (변동 가능)",
+      "reviews": "상품평 5,758개",
+      "image": "images/ep85.jpg",
+      "url": "https://www.coupang.com/vp/products/7537392952",
+      "date": "2026-10-27"
+    },
+    {
       "ep": "EP84",
       "name": "전라도 포기배추김치 10kg",
       "price": "42,900원 (변동 가능)",
@@ -808,5 +835,5 @@
       "image": "images/ep51.jpg"
     }
   ],
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
 }
