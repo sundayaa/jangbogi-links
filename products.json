@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP90",
+      "name": "코멧 천연펄프 키친타올 롤형 2겹 130매, 6롤, 1개",
+      "price": "3,990원 (변동 가능)",
+      "reviews": "상품평 39,121개 · 평점 4.8",
+      "image": "images/ep90.jpg",
+      "url": "https://www.coupang.com/vp/products/8724035718?vendorItemId=92337871553",
+      "date": "2026-10-28"
+    },
+    {
+      "ep": "EP89",
+      "name": "루솔 진한 배도라지즙, 100ml, 20개",
+      "price": "16,590원 (변동 가능)",
+      "reviews": "상품평 24,235개 · 평점 4.9",
+      "image": "images/ep89.jpg",
+      "url": "https://www.coupang.com/vp/products/6366527830?vendorItemId=4573569940",
+      "date": "2026-10-28"
+    },
+    {
+      "ep": "EP88",
+      "name": "코멧 니트릴장갑 화이트, 소형(S), 100매, 1개",
+      "price": "6,990원 (변동 가능)",
+      "reviews": "상품평 80,800개 · 평점 4.8",
+      "image": "images/ep88.jpg",
+      "url": "https://www.coupang.com/vp/products/5471859034?vendorItemId=8410641923",
+      "date": "2026-10-28"
+    },
+    {
       "ep": "EP87",
       "name": "락앤락 데일리 슬림핏 원터치 텀블러, 아이보리, 400ml, 1개",
       "price": "13,140원 (변동 가능)",
