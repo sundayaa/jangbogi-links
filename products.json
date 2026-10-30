@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP96",
+      "name": "코멧 아기물티슈 샤인 캡형, 100매, 10팩",
+      "price": "6,970원 (변동 가능)",
+      "reviews": "상품평 22,793개 · 평점 4.7",
+      "image": "images/ep96.jpg",
+      "url": "https://www.coupang.com/vp/products/7674733549",
+      "date": "2026-10-30"
+    },
+    {
+      "ep": "EP95",
+      "name": "코멧 3겹 브라운 화장지 30m, 30롤, 1개",
+      "price": "12,950원 (변동 가능)",
+      "reviews": "상품평 5,029개 · 평점 4.7",
+      "image": "images/ep95.jpg",
+      "url": "https://www.coupang.com/vp/products/6887513646",
+      "date": "2026-10-30"
+    },
+    {
+      "ep": "EP94",
+      "name": "곰곰 소중한 우리쌀 백미, 10kg, 1개, 보통",
+      "price": "30,990원 (변동 가능)",
+      "reviews": "상품평 18,102개 · 평점 4.6",
+      "image": "images/ep94.jpg",
+      "url": "https://www.coupang.com/vp/products/8137709232",
+      "date": "2026-10-30"
+    },
+    {
       "ep": "EP93",
       "name": "코멧 싱크대 배수구 거름망, 500개",
       "price": "5,990원 (변동 가능)",
@@ -880,5 +907,5 @@
       "image": "images/ep51.jpg"
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-30"
 }
