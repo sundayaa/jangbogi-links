@@ -3,21 +3,21 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
-      "ep": "EP100",
-      "name": "코멧 코팅 논슬립 옷걸이, 그레이, 60개",
-      "price": "16,780원 (변동 가능)",
-      "reviews": "상품평 74,392개 · 평점 4.8",
-      "image": "images/ep100.jpg",
-      "url": "https://www.coupang.com/vp/products/256738242",
-      "date": "2026-11-01"
-    },
-    {
       "ep": "EP101",
       "name": "스팸 클래식, 340g, 9개",
       "price": "34,160원 (변동 가능)",
       "reviews": "상품평 155,320개 · 평점 4.8",
       "image": "images/ep101.jpg",
       "url": "https://www.coupang.com/vp/products/8244032757?vendorItemId=91255258327",
+      "date": "2026-11-01"
+    },
+    {
+      "ep": "EP100",
+      "name": "코멧 코팅 논슬립 옷걸이, 그레이, 60개",
+      "price": "16,780원 (변동 가능)",
+      "reviews": "상품평 74,392개 · 평점 4.8",
+      "image": "images/ep100.jpg",
+      "url": "https://www.coupang.com/vp/products/256738242",
       "date": "2026-11-01"
     },
     {
