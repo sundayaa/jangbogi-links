@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP111",
+      "name": "코멧 쉽게 뽑아쓰는 일회용 마스크 대형, 100개입, 1개, 화이트",
+      "price": "7,490원 (변동 가능)",
+      "reviews": "상품평 474,202개 · 평점 4.8",
+      "image": "images/ep111.jpg",
+      "url": "https://www.coupang.com/vp/products/1959587814?vendorItemId=6990259829",
+      "date": "2026-11-04"
+    },
+    {
+      "ep": "EP110",
+      "name": "물먹는하마 숯 습기제거제 본품, 280g, 6개",
+      "price": "9,360원 (변동 가능)",
+      "reviews": "상품평 4,834개 · 평점 4.7",
+      "image": "images/ep110.jpg",
+      "url": "https://www.coupang.com/vp/products/5393643635?vendorItemId=89765663842",
+      "date": "2026-11-04"
+    },
+    {
+      "ep": "EP109",
+      "name": "탐사 샘물, 2L, 12개",
+      "price": "5,690원 (변동 가능)",
+      "reviews": "상품평 559,140개 · 평점 4.9",
+      "image": "images/ep109.jpg",
+      "url": "https://www.coupang.com/vp/products/7689270513",
+      "date": "2026-11-04"
+    },
+    {
       "ep": "EP108",
       "name": "종가 포기김치, 900g, 1개",
       "price": "12,010원 (변동 가능)",
@@ -997,5 +1024,5 @@
       "image": "images/ep51.jpg"
     }
   ],
-  "updated": "2026-11-03"
+  "updated": "2026-11-04"
 }
