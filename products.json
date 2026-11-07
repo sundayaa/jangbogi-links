@@ -3,6 +3,33 @@
  "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
  "products": [
   {
+   "ep": "EP117",
+   "name": "오뚜기 진라면 매운맛 120g, 20개",
+   "price": "13,080원 (변동 가능)",
+   "reviews": "상품평 574,370개 · 평점 4.8",
+   "image": "images/ep117.jpg",
+   "url": "https://www.coupang.com/vp/products/14111627?vendorItemId=70158552032",
+   "date": "2026-11-07"
+  },
+  {
+   "ep": "EP116",
+   "name": "탐사 틈새차단 실리콘 테이프 5cm*10M, 2개입",
+   "price": "6,090원 (변동 가능)",
+   "reviews": "상품평 5,928개 · 평점 4.6",
+   "image": "images/ep116.jpg",
+   "url": "https://www.coupang.com/vp/products/5486474828?vendorItemId=8481031469",
+   "date": "2026-11-07"
+  },
+  {
+   "ep": "EP115",
+   "name": "크리넥스 빨아쓰는 위생행주 MAX, 72개입, 4개",
+   "price": "8,900원 (변동 가능)",
+   "reviews": "상품평 12,377개 · 평점 4.8",
+   "image": "images/ep115.jpg",
+   "url": "https://www.coupang.com/vp/products/9473972086?vendorItemId=28466648554",
+   "date": "2026-11-07"
+  },
+  {
    "ep": "EP114",
    "name": "다우니 섬유유연제 에이프릴 프레쉬 본품, 2.63L, 1개",
    "price": "18,900원 (변동 가능)",
@@ -1051,5 +1078,5 @@
    "image": "images/ep51.jpg"
   }
  ],
- "updated": "2026-11-06"
+ "updated": "2026-11-07"
 }
