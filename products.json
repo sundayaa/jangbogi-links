@@ -3,6 +3,33 @@
  "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
  "products": [
   {
+   "ep": "EP120",
+   "name": "퍼실 딥클린 엑스퍼트 실내건조 드럼용 액상세제 본품, 2.7L, 1개입, 1개",
+   "price": "16,100원 (변동 가능)",
+   "reviews": "상품평 6,770개 · 평점 4.8",
+   "image": "images/ep120.jpg",
+   "url": "https://www.coupang.com/vp/products/8712973736?vendorItemId=85321475229",
+   "date": "2026-11-08"
+  },
+  {
+   "ep": "EP119",
+   "name": "탐사 국내 생산 파스형 붙이는 타입 핫팩 40g, 50개",
+   "price": "15,820원 (변동 가능)",
+   "reviews": "상품평 14,327개 · 평점 4.5",
+   "image": "images/ep119.jpg",
+   "url": "https://www.coupang.com/vp/products/2348197994?vendorItemId=4072200764",
+   "date": "2026-11-08"
+  },
+  {
+   "ep": "EP118",
+   "name": "삼양 불닭볶음면 140g, 20개",
+   "price": "19,900원 (변동 가능)",
+   "reviews": "상품평 153,465개 · 평점 4.8",
+   "image": "images/ep118.jpg",
+   "url": "https://www.coupang.com/vp/products/7460681274?vendorItemId=29087227869",
+   "date": "2026-11-08"
+  },
+  {
    "ep": "EP117",
    "name": "오뚜기 진라면 매운맛 120g, 20개",
    "price": "13,080원 (변동 가능)",
@@ -1078,5 +1105,5 @@
    "image": "images/ep51.jpg"
   }
  ],
- "updated": "2026-11-07"
+ "updated": "2026-11-08"
 }
