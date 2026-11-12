@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP132",
+      "name": "코멧 PLA 생분해 음식물쓰레기 봉투 50매, 3.5L, 1개",
+      "price": "9,688원 (변동 가능)",
+      "reviews": "상품평 3,054개 · 평점 5.0",
+      "image": "images/ep132.jpg",
+      "url": "https://www.coupang.com/np/search?q=%EC%BD%94%EB%A9%A7%20PLA%20%EC%83%9D%EB%B6%84%ED%95%B4%20%EC%9D%8C%EC%8B%9D%EB%AC%BC%EC%93%B0%EB%A0%88%EA%B8%B0%20%EB%B4%89%ED%88%AC%203.5L",
+      "date": "2026-11-12"
+    },
+    {
+      "ep": "EP131",
+      "name": "청정원 대나무숙성 멸치액젓, 1kg, 2개",
+      "price": "8,300원 (변동 가능)",
+      "reviews": "상품평 67,949개 · 평점 4.8",
+      "image": "images/ep131.jpg",
+      "url": "https://www.coupang.com/np/search?q=%EC%B2%AD%EC%A0%95%EC%9B%90%20%EB%8C%80%EB%82%98%EB%AC%B4%EC%88%99%EC%84%B1%20%EB%A9%B8%EC%B9%98%EC%95%A1%EC%A0%93%201kg",
+      "date": "2026-11-12"
+    },
+    {
+      "ep": "EP130",
+      "name": "다우니 건조기 드라이 시트 에이프릴 프레쉬 본품 240개입, 1개",
+      "price": "25,500원 (변동 가능)",
+      "reviews": "상품평 16,215개 · 평점 4.5",
+      "image": "images/ep130.jpg",
+      "url": "https://www.coupang.com/np/search?q=%EB%8B%A4%EC%9A%B0%EB%8B%88%20%EA%B1%B4%EC%A1%B0%EA%B8%B0%20%EB%93%9C%EB%9D%BC%EC%9D%B4%20%EC%8B%9C%ED%8A%B8%20%EC%97%90%EC%9D%B4%ED%94%84%EB%A6%B4%20%ED%94%84%EB%A0%88%EC%89%AC%20%EB%B3%B8%ED%92%88%20240%EA%B0%9C%EC%9E%85",
+      "date": "2026-11-12"
+    },
+    {
       "ep": "EP129",
       "name": "탐사 국내생산 3중 단열뽁뽁이 에어캡 무지, 1 x 10 m, 1개",
       "price": "8,890원 (변동 가능)",
@@ -1186,5 +1213,5 @@
       "image": "images/ep51.jpg"
     }
   ],
-  "updated": "2026-11-11"
+  "updated": "2026-11-12"
 }
