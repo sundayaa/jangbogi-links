@@ -3,6 +3,33 @@
   "disclosure": "이 페이지의 링크를 통해 구매하시면 저희가 일정액의 수수료를 제공받습니다. (쿠팡파트너스 활동의 일환)",
   "products": [
     {
+      "ep": "EP135",
+      "name": "농심 안성탕면 125g, 5개",
+      "price": "3,250원 (변동 가능)",
+      "reviews": "상품평 448,313개 · 평점 4.8",
+      "image": "images/ep135.jpg",
+      "url": "https://www.coupang.com/np/search?q=%EB%86%8D%EC%8B%AC%20%EC%95%88%EC%84%B1%ED%83%95%EB%A9%B4%20125g%205%EA%B0%9C",
+      "date": "2026-11-13"
+    },
+    {
+      "ep": "EP134",
+      "name": "코멧 국내생산 욕실 청소용 브러쉬 세트 5종, 1세트",
+      "price": "13,440원 (변동 가능)",
+      "reviews": "상품평 16,709개 · 평점 4.6",
+      "image": "images/ep134.jpg",
+      "url": "https://www.coupang.com/np/search?q=%EC%BD%94%EB%A9%A7%20%EA%B5%AD%EB%82%B4%EC%83%9D%EC%82%B0%20%EC%9A%95%EC%8B%A4%20%EC%B2%AD%EC%86%8C%EC%9A%A9%20%EB%B8%8C%EB%9F%AC%EC%89%AC%20%EC%84%B8%ED%8A%B8%205%EC%A2%85",
+      "date": "2026-11-13"
+    },
+    {
+      "ep": "EP133",
+      "name": "코멧 강력한 울스텐 수세미, 1개입, 20개",
+      "price": "9,650원 (변동 가능)",
+      "reviews": "상품평 4,694개 · 평점 4.7",
+      "image": "images/ep133.jpg",
+      "url": "https://www.coupang.com/np/search?q=%EC%BD%94%EB%A9%A7%20%EA%B0%95%EB%A0%A5%ED%95%9C%20%EC%9A%B8%EC%8A%A4%ED%85%90%20%EC%88%98%EC%84%B8%EB%AF%B8%2020%EA%B0%9C",
+      "date": "2026-11-13"
+    },
+    {
       "ep": "EP132",
       "name": "코멧 PLA 생분해 음식물쓰레기 봉투 50매, 3.5L, 1개",
       "price": "9,688원 (변동 가능)",
@@ -1213,5 +1240,5 @@
       "image": "images/ep51.jpg"
     }
   ],
-  "updated": "2026-11-12"
+  "updated": "2026-11-13"
 }
